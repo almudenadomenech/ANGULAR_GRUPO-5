@@ -1,10 +1,12 @@
 export interface House {
 
     id: number;
-    capacidad: number;
+    nombre: string;
+    habitaciones: number;
     piscina: boolean;
     precio: number;
     decripcion: string;
-    photoUrl: string;
+    fotoUrl: string [];
+    animales: boolean;
     
 }

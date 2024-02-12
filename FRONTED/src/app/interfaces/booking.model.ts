@@ -1,5 +1,5 @@
 import { Pago } from "./pago.mdel";
-import { User } from "./user.model";
+import { User} from "./user.model";
 
 export interface Booking {
         id: string;
@@ -11,7 +11,7 @@ export interface Booking {
         },
         disponibilidad: boolean;
         pago: Pago;
-        Mascotas: boolean;
+        
         destino: string;
-        user: User;
+        usuario: User;
 }

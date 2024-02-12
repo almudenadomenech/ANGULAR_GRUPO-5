@@ -1,7 +1,7 @@
 import { Pago } from "./pago.mdel";
 
 export interface Booking {
-
+        id: string;
         fechaEntrada: Date;
         fechaSalida: Date,
         personas: {

@@ -5,6 +5,6 @@ export interface House {
     piscina: boolean;
     precio: number;
     decripcion: string;
-    imagen: string;
+    photoUrl: string;
     
 }

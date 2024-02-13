@@ -4,15 +4,17 @@ export interface House {
 
     nombre: string;
     habitaciones: number;
-    banos: boolean;
+    banos: number;
     precio: number;
 
     m2: number;
 
-    animales: boolean;
+    petFriendly: boolean;
     piscina: boolean;
     jardin: boolean;
     terraza: boolean;
+    wifi: boolean;
+    aireAcondicionado: boolean;
     
     decripcion: string;
     fotoUrls: string [];

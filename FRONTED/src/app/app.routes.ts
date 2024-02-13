@@ -10,6 +10,9 @@ export const routes: Routes = [
     {
         path: 'house/:id',
         component: HouseDetailComponent
+<<<<<<< Updated upstream
         
+=======
+>>>>>>> Stashed changes
     }
 ];

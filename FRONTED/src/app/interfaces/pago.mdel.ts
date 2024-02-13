@@ -1,6 +1,9 @@
+import { User } from "./user.model";
+
 export interface Pago {
-    efectivo: boolean;
-            tarjeta: boolean;
-            biZum: boolean;
-            payPal: boolean;
+
+    tarjeta: boolean;
+    biZum: boolean;
+    payPal: boolean;
+    usuario: User;
 }

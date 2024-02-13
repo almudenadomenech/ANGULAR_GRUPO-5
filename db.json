@@ -274,6 +274,127 @@
         "ciudad": "Nishi-Tokyo-shi",
         "código postal": 43534
   }
+],
+"booking":[
+  {
+      "id": 9,
+      "fechaEntrada": "23/02/2023",
+      "fechaSalida": "25/06/2023",
+      "personas": 2,
+      "estatus": false,
+      "destino": null,
+      "usuario": "eparnall0",
+      "casa": {
+          "id": 1
+      }
+  },
+  {
+      "id": 8,
+      "fechaEntrada": "26/06/2023",
+      "fechaSalida": "29/05/2023",
+      "personas": 9,
+      "estatus": false,
+      "destino": null,
+      "usuario": "cofford1",
+      "casa": {
+          "id": 2
+      }
+  },
+  {
+      "id": 10,
+      "fechaEntrada": "12/08/2023",
+      "fechaSalida": "18/02/2023",
+      "personas": 1,
+      "estatus": false,
+      "destino": "Provence-Alpes-Côte d'Azur",
+      "usuario": "mbrunnstein2",
+      "casa": {
+          "id": 3
+      }
+  },
+  {
+      "id": 7,
+      "fechaEntrada": "13/05/2023",
+      "fechaSalida": "15/01/2024",
+      "personas": 4,
+      "estatus": true,
+      "destino": "Québec",
+      "usuario": "lmcdermot3",
+      "casa": {
+          "id": 4
+      }
+  },
+  {
+      "id": 5,
+      "fechaEntrada": "02/06/2023",
+      "fechaSalida": "15/08/2023",
+      "personas": 5,
+      "estatus": true,
+      "destino": null,
+      "usuario": "pokynsillaghe4",
+      "casa": {
+          "id": 5
+      }
+  },
+  {
+      "id": 8,
+      "fechaEntrada": "15/11/2023",
+      "fechaSalida": "10/07/2023",
+      "personas": 9,
+      "estatus": true,
+      "destino": null,
+      "usuario": "hpirouet5",
+      "casa": {
+          "id": 6
+      }
+  },
+  {
+      "id": 9,
+      "fechaEntrada": "07/03/2023",
+      "fechaSalida": "02/05/2023",
+      "personas": 7,
+      "estatus": false,
+      "destino": null,
+      "usuario": "dwheway6",
+      "casa": {
+          "id": 7
+      }
+  },
+  {
+      "id": 9,
+      "fechaEntrada": "23/12/2023",
+      "fechaSalida": "12/07/2023",
+      "personas": 4,
+      "estatus": true,
+      "destino": null,
+      "usuario": "tsworder7",
+      "casa": {
+          "id": 8
+      }
+  },
+  {
+      "id": 2,
+      "fechaEntrada": "28/01/2024",
+      "fechaSalida": "01/05/2023",
+      "personas": 5,
+      "estatus": true,
+      "destino": "Québec",
+      "usuario": "sdietz8",
+      "casa": {
+          "id": 9
+      }
+  },
+  {
+      "id": 3,
+      "fechaEntrada": "07/03/2023",
+      "fechaSalida": "27/01/2024",
+      "personas": 1,
+      "estatus": true,
+      "destino": null,
+      "usuario": "sfearenside9",
+      "casa": {
+          "id": 10
+      }
+  }
 ]
-  
 }

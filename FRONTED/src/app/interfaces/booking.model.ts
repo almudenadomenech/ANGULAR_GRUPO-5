@@ -1,6 +1,6 @@
 import { BookingStatus } from "./booking-status.model";
 import { House } from "./house.model";
-import { Pago } from "./pago.mdel";
+import { Pago } from "./pago.model";
 import { User} from "./user.model";
 
 export interface Booking {

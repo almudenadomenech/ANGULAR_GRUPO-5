@@ -153,7 +153,7 @@
         "descripcion": "Casa muy bonita en el mar ",
         "fotoUrls": "https://placehold.co/600x400"    }
 ],
-"users":[
+"user":[
     {
         "nombre": "Farra",
         "apellido": "Dubery",
@@ -283,8 +283,8 @@
       "personas": 2,
       "estatus": false,
       "destino": null,
-      "usuario": "eparnall0",
-      "casa": {
+      "user": {"id":1},
+      "houses": {
           "id": 1
       }
   },
@@ -295,8 +295,8 @@
       "personas": 9,
       "estatus": false,
       "destino": null,
-      "usuario": "cofford1",
-      "casa": {
+      "user": {"id": 2},
+      "houses": {
           "id": 2
       }
   },
@@ -307,7 +307,7 @@
       "personas": 1,
       "estatus": false,
       "destino": "Provence-Alpes-Côte d'Azur",
-      "usuario": "mbrunnstein2",
+      "user": {"id": 3},
       "casa": {
           "id": 3
       }
@@ -319,7 +319,7 @@
       "personas": 4,
       "estatus": true,
       "destino": "Québec",
-      "usuario": "lmcdermot3",
+      "user": {"id": 4},
       "casa": {
           "id": 4
       }
@@ -331,7 +331,7 @@
       "personas": 5,
       "estatus": true,
       "destino": null,
-      "usuario": "pokynsillaghe4",
+      "user": {"id": 5},
       "casa": {
           "id": 5
       }
@@ -343,7 +343,7 @@
       "personas": 9,
       "estatus": true,
       "destino": null,
-      "usuario": "hpirouet5",
+      "user": {"id": 6},
       "casa": {
           "id": 6
       }
@@ -355,7 +355,7 @@
       "personas": 7,
       "estatus": false,
       "destino": null,
-      "usuario": "dwheway6",
+      "user": {"id": 7},
       "casa": {
           "id": 7
       }
@@ -367,7 +367,7 @@
       "personas": 4,
       "estatus": true,
       "destino": null,
-      "usuario": "tsworder7",
+      "user": {"id": 8},
       "casa": {
           "id": 8
       }
@@ -379,7 +379,7 @@
       "personas": 5,
       "estatus": true,
       "destino": "Québec",
-      "usuario": "sdietz8",
+      "user": {"id": 9},
       "casa": {
           "id": 9
       }
@@ -391,7 +391,7 @@
       "personas": 1,
       "estatus": true,
       "destino": null,
-      "usuario": "sfearenside9",
+      "user": {"id": 10},
       "casa": {
           "id": 10
       }
@@ -402,21 +402,21 @@
         "id": 1,
         "rating": 1.2,
         "opinion": "Devolved interactive system engine",
-        "usuarios": "wkonertz0",
+        "user": "wkonertz0",
         "casa": "Webb Konertz"
     },
     {
         "id": 2,
         "rating": 4.6,
         "opinion": "Robust content-based adapter",
-        "usuarios": "azappel1",
+        "user": "azappel1",
         "casa": "Ali Zappel"
     },
     {
         "id": 3,
         "rating": 4.5,
         "opinion": "Cross-platform bandwidth-monitored paradigm",
-        "usuarios": "alyle2",
+        "user": "alyle2",
         "casa": "Aldin Lyle"
     },
     {

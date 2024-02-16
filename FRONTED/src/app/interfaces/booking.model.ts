@@ -1,15 +1,19 @@
+import { BookingStatus } from "./booking-status.model";
+import { House } from "./house.model";
 import { Pago } from "./pago.mdel";
+import { User} from "./user.model";
 
 export interface Booking {
+        id: number;
 
         fechaEntrada: Date;
         fechaSalida: Date,
-        personas: {
-            adultos: number;
-            menores: number;
-        },
-        disponibilidad: boolean;
+        personas: number;
+        estatus: BookingStatus;
         pago: Pago;
-        Mascotas: boolean;
+        
         destino: string;
+        
+        usuario: User;
+        casa: House;
 }

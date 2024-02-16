@@ -1,4 +1,4 @@
-# ANGULAR_GRUPO-5 test
+# ANGULAR_GRUPO-5 
 
 ## CREACIÓN DE NUEVO PROYECTO ANGULAR CON BOOTSTRAP Y BOOTSTRAP-ICONS
 
@@ -47,3 +47,8 @@ tipo de dato concreto como por ejemplo: Producto,, Casa, Curso, Empresa, Coche:
  ## API DE PRODUCTOS DEMO
 
  https://fakestoreapi.com/
+
+
+ ## DISEÑO PAGINA PRINCIPAL EN BOOSTRAP
+ 
+ https://getbootstrap.com/docs/5.3/examples/

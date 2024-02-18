@@ -16,7 +16,7 @@ export interface House {
     wifi: boolean;
     aireAcondicionado: boolean;
     
-    decripcion: string;
+    descripcion: string;
     fotoUrls: string [];
    
     

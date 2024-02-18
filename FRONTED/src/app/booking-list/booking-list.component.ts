@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common'; // Importa CommonModule
 
 @Component({
   selector: 'app-booking-list',
@@ -24,3 +25,15 @@ export interface Booking {
   notes: string; // Notas adicionales sobre la reserva
   // Otros campos relevantes
 }
+@NgModule({
+  imports: [
+    CommonModule // Agrega CommonModule aquí
+  ],
+  declarations: [
+    BookingListComponent
+  ],
+  exports: [
+    BookingListComponent
+  ]
+})
+export class BookingListModule { }

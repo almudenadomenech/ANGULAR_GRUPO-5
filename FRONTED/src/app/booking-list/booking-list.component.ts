@@ -1,16 +1,17 @@
 import { Component, NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common'; // Importa CommonModule
+import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http'; // Importa HttpClientModule para realizar solicitudes HTTP
 
 @Component({
   selector: 'app-booking-list',
-  standalone: true,
-  imports: [],
   templateUrl: './booking-list.component.html',
-  styleUrl: './booking-list.component.css'
+  styleUrls: ['./booking-list.component.css']
 })
 export class BookingListComponent {
-// Propiedades y métodos para el componente
+  // Propiedades y métodos para el componente
+  bookings: Booking[] = []; // Inicializamos el array de bookings
 }
+
 export interface Booking {
   id: number;
   customerName: string;
@@ -25,15 +26,13 @@ export interface Booking {
   notes: string; // Notas adicionales sobre la reserva
   // Otros campos relevantes
 }
+
 @NgModule({
+  declarations: [BookingListComponent],
   imports: [
-    CommonModule // Agrega CommonModule aquí
+    CommonModule,
+    HttpClientModule // Agregamos HttpClientModule al array de imports
   ],
-  declarations: [
-    BookingListComponent
-  ],
-  exports: [
-    BookingListComponent
-  ]
+  exports: [BookingListComponent]
 })
 export class BookingListModule { }

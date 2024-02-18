@@ -1,25 +1,19 @@
 
- <!-- booking-list.component.html -->
-
-<div class="booking-list">
-    <h2>Lista de reservas</h2>
-    <ul>
-      <li *ngFor="let booking of bookings">
-        <div class="booking-item">
-          <h3>{{ booking.customerName }}</h3>
-          <p>ID: {{ booking.id }}</p>
-          <p>Fecha: {{ booking.date | date }}</p>
-          <p>Hora de inicio: {{ booking.startTime }}</p>
-          <p>Hora de fin: {{ booking.endTime }}</p>
-          <p>Estado: {{ booking.status }}</p>
-          <p>Número de habitación: {{ booking.roomNumber }}</p>
-          <p>Precio total: {{ booking.totalPrice }}</p>
-          <p>Número de teléfono: {{ booking.phoneNumber }}</p>
-          <p>Correo electrónico: {{ booking.email }}</p>
-          <p>Notas: {{ booking.notes }}</p>
-          <!-- Otros campos relevantes -->
-        </div>
-      </li>
-    </ul>
-  </div>
-   
+<div>
+  <h2>Listado de Reservas</h2>
+  <ul>
+    <li *ngFor="let booking of bookings">
+      <h3>Reserva {{ booking.id }}</h3>
+      <p><strong>Cliente:</strong> {{ booking.customerName }}</p>
+      <p><strong>Fecha:</strong> {{ booking.date | date }}</p>
+      <p><strong>Hora de Inicio:</strong> {{ booking.startTime }}</p>
+      <p><strong>Hora de Fin:</strong> {{ booking.endTime }}</p>
+      <p><strong>Estado:</strong> {{ booking.status }}</p>
+      <p><strong>Número de Habitación:</strong> {{ booking.roomNumber }}</p>
+      <p><strong>Precio Total:</strong> {{ booking.totalPrice }}</p>
+      <p><strong>Teléfono:</strong> {{ booking.phoneNumber }}</p>
+      <p><strong>Correo Electrónico:</strong> {{ booking.email }}</p>
+      <p><strong>Notas:</strong> {{ booking.notes }}</p>
+    </li>
+  </ul>
+</div>

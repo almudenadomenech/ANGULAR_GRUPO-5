@@ -18,7 +18,7 @@ export class HouseDetailComponent implements OnInit{
 
   // métodos SIN SERVICIO
     ngOnInit(): void {
-      this.http.get<House[]>('http://localhost:3000/house').subscribe(houses => this.houses = houses);
+      this.http.get<House[]>('http://localhost:3000/houses').subscribe(houses => this.houses = houses);
 
     }
 

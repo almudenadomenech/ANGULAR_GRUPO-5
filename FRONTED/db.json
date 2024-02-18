@@ -15,7 +15,8 @@
         "wifi": false,
         "aire acondicionado": false,
         "descripcion": "Casa muy bonita en el mar ",
-        "fotoUrls": "https://placehold.co/600x400"
+        "fotoUrls": "https://placehold.co/600x400",
+        "destino": "Asturias"
     },
     {
         "id": 2,
@@ -31,7 +32,9 @@
         "wifi": false,
         "aire acondicionado": true,
         "descripcion": "Casa muy bonita en el mar ",
-        "fotoUrls": "https://placehold.co/600x400"    },
+        "fotoUrls": "https://placehold.co/600x400",
+        "destino": "Asturias"
+    },
     {
         "id": 3,
         "titulo": "Virgil",
@@ -46,7 +49,9 @@
         "wifi": false,
         "aire acondicionado": false,
         "descripcion": "Casa muy bonita en el mar ",
-        "fotoUrls": "https://placehold.co/600x400"    },
+        "fotoUrls": "https://placehold.co/600x400",
+        "destino": "Asturias"
+    },
     {
         "id": 4,
         "titulo": "Harriet",
@@ -61,7 +66,9 @@
         "wifi": true,
         "aire acondicionado": true,
         "descripcion": "Casa muy bonita en el mar ",
-        "fotoUrls": "https://placehold.co/600x400"    },
+        "fotoUrls": "https://placehold.co/600x400",
+        "destino": "Asturias"
+    },
     {
         "id": 5,
         "titulo": "Lanny",
@@ -76,7 +83,9 @@
         "wifi": false,
         "aire acondicionado": true,
         "descripcion": "Casa muy bonita en el mar ",
-        "fotoUrls": "https://placehold.co/600x400"    },
+        "fotoUrls": "https://placehold.co/600x400",
+        "destino": "Asturias"
+    },
     {
         "id": 6,
         "titulo": "Alfie",
@@ -91,7 +100,9 @@
         "wifi": false,
         "aire acondicionado": false,
         "descripcion": "Casa muy bonita en el mar ",
-        "fotoUrls": "https://placehold.co/600x400"    },
+        "fotoUrls": "https://placehold.co/600x400",
+        "destino": "Asturias"
+    },
     {
         "id": 7,
         "titulo": "Lari",
@@ -106,7 +117,9 @@
         "wifi": true,
         "aire acondicionado": true,
         "descripcion": "Casa muy bonita en el mar ",
-        "fotoUrls": "https://placehold.co/600x400"    },
+        "fotoUrls": "https://placehold.co/600x400",
+        "destino": "Asturias"
+    },
     {
         "id": 8,
         "titulo": "Edna",
@@ -121,7 +134,9 @@
         "wifi": true,
         "aire acondicionado": false,
         "descripcion": "Casa muy bonita en el mar ",
-        "fotoUrls": "https://placehold.co/600x400"    },
+        "fotoUrls": "https://placehold.co/600x400",
+        "destino": "Asturias"
+    },
     {
         "id": 9,
         "titulo": "Matty",
@@ -136,7 +151,9 @@
         "wifi": true,
         "aire acondicionado": false,
         "descripcion": "Casa muy bonita en el mar ",
-        "fotoUrls": "https://placehold.co/600x400"  },
+        "fotoUrls": "https://placehold.co/600x400",
+        "destino": "Asturias"
+    },
     {
         "id": 10,
         "titulo": "Caralie",
@@ -151,7 +168,9 @@
         "wifi": true,
         "aire acondicionado": true,
         "descripcion": "Casa muy bonita en el mar ",
-        "fotoUrls": "https://placehold.co/600x400"    }
+        "fotoUrls": "https://placehold.co/600x400",
+        "destino": "Asturias"
+    }
 ],
 "user":[
     {

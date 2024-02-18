@@ -17,7 +17,7 @@ export interface Booking {
   startTime: string; // Hora de inicio de la reserva
   endTime: string; // Hora de fin de la reserva
   status: 'pending' | 'confirmed' | 'cancelled'; // Estado de la reserva
-  roomNumber: number; // Número de la habitación reservada
+  roomNumber: number; // Número de la cas
   totalPrice: number; // Precio total de la reserva
   phoneNumber: string; // Número de teléfono del cliente
   email: string; // Correo electrónico del cliente

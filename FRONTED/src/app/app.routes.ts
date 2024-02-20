@@ -5,6 +5,7 @@ import { BookingListComponent } from './booking-list/booking-list.component';
 import { BookingDetailComponent } from './booking-detail/booking-detail.component';
 
 export const routes: Routes = [
+    
     {
         path: 'houses',
         component: HouseListComponent

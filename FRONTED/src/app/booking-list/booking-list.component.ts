@@ -9,7 +9,21 @@ import { HttpClientModule } from '@angular/common/http'; // Importa HttpClientMo
 })
 export class BookingListComponent {
   // Propiedades y métodos para el componente
-  bookings: Booking[] = []; // Inicializamos el array de bookings
+  bookings: Booking[] = [
+    {
+      id: 1,
+      customerName: 'John Doe',
+      date: new Date(),
+      startTime: '09:00',
+      endTime: '10:00',
+      status: 'confirmed',
+      roomNumber: 101,
+      totalPrice: 100,
+      phoneNumber: '123-456-7890',
+      email: 'john@example.com',
+      notes: 'No special notes'
+    }
+  ]; // Cierre del array de bookings
 }
 
 export interface Booking {

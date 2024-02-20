@@ -58,4 +58,4 @@ tipo de dato concreto como por ejemplo: Producto,, Casa, Curso, Empresa, Coche:
 En otra terminal
 json-server  db.json
 
-## BOOSTRAP: CAROUSEL, HELPERS: objet file
+## BOOSTRAP: CAROUSEL, UTILIES: objet file

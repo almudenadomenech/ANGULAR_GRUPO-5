@@ -1,124 +1,144 @@
-
-<!-- 
-<div class="container mt-5">
-    <div class="row">
-      <div class="col-4 text-center">
-  
-        @if (house && house.fotoUrls && house.fotoUrls.length > 0){
-          <img class="img-fluid" [src]="house.fotoUrls" alt="Foto casa">
-        } @else {
-          <p class="py-5">Este casa no tiene imagen de perfil.</p>
-          <img class="img-fluid" src="https://ui-avatars.com/api/?name=A&size=256">
-        }
-
-      </div>
-      <div class="col-8">
-  
-        @if(house){
-        <div class="container px-4 py-5" id="icon-grid">
-          <h2 class="pb-2 border-bottom">Casa con id {{house.id}}</h2>
-  
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4 py-5">
-            <div class="col d-flex align-items-start">
-              <i class="bi bi-geo-alt text-info flex-shrink-0 me-3 fs-2"></i>
-              <div>
-                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Nombre de la casa</h3>
-                <p>{{house.nombre}}</p>
-              </div>
-            </div>
-            <div class="col d-flex align-items-start">
-              <i class="bi bi-phone text-info flex-shrink-0 me-3 fs-2"></i>
-              <div>
-                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Número de habitaciones</h3>
-                <p>{{house.habitaciones}}</p>
-              </div>
-            </div>
-            <div class="col d-flex align-items-start">
-              <i class="bi bi-cup-straw text-info flex-shrink-0 me-3 fs-2"></i>
-              <div>
-                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Núnero de baños</h3>
-                <p>{{house.banos}}</p>
-              </div>
-            </div>
-            <div class="col d-flex align-items-start">
-              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"></use></svg>
-              <div>
-                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Precio</h3>
-                <p>{{house.precio}}</p>
-              </div>
-            </div>
-            <div class="col d-flex align-items-start">
-              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"></use></svg>
-              <div>
-                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Metros cuadrados</h3>
-                <p>{{house.m2}}</p>
-              </div>
-            </div>
-            <div class="col d-flex align-items-start">
-              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
-              <div>
-                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">PetFriendly</h3>
-                <p>{{house.petFriendly}}</p>
-              </div>
-            <div class="col d-flex align-items-start">
-                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
-                <div>
-                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Piscina</h3>
-                  <p>{{house.piscina}}</p>
-                </div>
-            </div>
-            <div class="col d-flex align-items-start">
-                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
-                <div>
-                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Jardin</h3>
-                  <p>{{house.jardin}}</p>
-                </div>
-            </div>
-            <div class="col d-flex align-items-start">
-                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
-                <div>
-                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Terraza</h3>
-                  <p>{{house.terraza}}</p>
-                </div>
-            </div> 
-            <div class="col d-flex align-items-start">
-                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
-                <div>
-                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Wifi</h3>
-                  <p>{{house.wifi}}</p>
-                </div>
-            </div> 
-            <div class="col d-flex align-items-start">
-                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
-                <div>
-                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Aire acondicionado</h3>
-                  <p>{{house.aireAcondicionado}}</p>
-                </div>
-            </div>   
-            <div class="col d-flex align-items-start">
-                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
-                <div>
-                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Descripción</h3>
-                  <p>{{house.descripcion}}</p>
-                </div>
-            </div>                                     
-
-            </div>
-          </div>
-        </div>
-  
-      } @else {
-        <p>Casa no encontrado.</p>
-      }
-      </div>
-    </div>
-  </div>
-  -->
- 
-  
 <div class="container mt-5">
   <div class="row">
     <div class="col-4 text-center">
+
+      @if (house && house.fotoUrls && house.fotoUrls.length > 0){
+      <img class="img-fluid" [src]="house.fotoUrls" alt="Foto casa">
+      } @else {
+      <p class="py-5">Este casa no tiene imagen de perfil.</p>
+      <img class="img-fluid" src="https://ui-avatars.com/api/?name=A&size=256">
+      }
+
+    </div>
+
+
+    <div class="col-8">
+
+      @if(house){
+      <div class="container px-4 py-5" id="icon-grid">
+        <h2 class="pb-2 border-bottom">Casa con id {{house.id}}</h2>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4 py-5">
+          <div class="col d-flex align-items-start">
+            <i class="bi bi-geo-alt text-info flex-shrink-0 me-3 fs-2"></i>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Nombre de la casa</h3>
+              <p>{{house.nombre}}</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <i class="bi bi-phone text-info flex-shrink-0 me-3 fs-2"></i>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Número de habitaciones</h3>
+              <p>{{house.habitaciones}}</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <i class="bi bi-cup-straw text-info flex-shrink-0 me-3 fs-2"></i>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Núnero de baños</h3>
+              <p>{{house.banos}}</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+              <use xlink:href="#speedometer2"></use>
+            </svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Precio</h3>
+              <p>{{house.precio}}</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+              <use xlink:href="#toggles2"></use>
+            </svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Metros cuadrados</h3>
+              <p>{{house.m2}}</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+              <use xlink:href="#geo-fill"></use>
+            </svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">PetFriendly</h3>
+              <p>{{house.petFriendly}}</p>
+            </div>
+            
+            <div class="col d-flex align-items-start">
+              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                <use xlink:href="#geo-fill"></use>
+              </svg>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Piscina</h3>
+                <p>{{house.piscina}}</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                <use xlink:href="#geo-fill"></use>
+              </svg>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Jardin</h3>
+                <p>{{house.jardin}}</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                <use xlink:href="#geo-fill"></use>
+              </svg>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Terraza</h3>
+                <p>{{house.terraza}}</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                <use xlink:href="#geo-fill"></use>
+              </svg>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Wifi</h3>
+                <p>{{house.wifi}}</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                <use xlink:href="#geo-fill"></use>
+              </svg>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Aire acondicionado</h3>
+                <p>{{house.aireAcondicionado}}</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                <use xlink:href="#geo-fill"></use>
+              </svg>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Descripción</h3>
+                <p>{{house.descripcion}}</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div> 
+
+      } @else {
+      <p>Casa no encontrado.</p>
+      }
+    </div>
+  </div>
+</div>
+
+
+
+<!-- 
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-2 text-center">
 
             <table class="table">
                 <thead>
@@ -142,7 +162,7 @@
                 <tbody>
                     @for (house of houses; track house.id) {
                         <tr>
-                            <th scope="row">{{house.id}}</th>
+                            <th>{{house.id}}</th>
                             <td>{{house.nombre}}</td>
                             <td>{{house.habitaciones}}</td>
                             <td>{{house.banos}}</td>
@@ -165,4 +185,4 @@
         </div>
     </div>
   </div>
-   
+-->

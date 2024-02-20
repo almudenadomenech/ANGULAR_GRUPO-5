@@ -15,7 +15,7 @@
         "wifi": false,
         "aire acondicionado": false,
         "descripcion": "Casa muy bonita en el mar ",
-        "fotoUrls": "https://placehold.co/600x400",
+        "fotoUrls": "https://cdn.pixabay.com/photo/2022/08/17/09/15/houses-7391985_1280.jpg",
         "destino": "Asturias"
     },
     {
@@ -32,7 +32,7 @@
         "wifi": false,
         "aire acondicionado": true,
         "descripcion": "Casa muy bonita en el mar ",
-        "fotoUrls": "https://placehold.co/600x400",
+        "fotoUrls": "https://cdn.pixabay.com/photo/2022/08/17/09/15/houses-7391985_1280.jpg",
         "destino": "Asturias"
     },
     {
@@ -49,7 +49,7 @@
         "wifi": false,
         "aire acondicionado": false,
         "descripcion": "Casa muy bonita en el mar ",
-        "fotoUrls": "https://placehold.co/600x400",
+        "fotoUrls": "https://cdn.pixabay.com/photo/2022/08/17/09/15/houses-7391985_1280.jpg",
         "destino": "Asturias"
     },
     {
@@ -66,7 +66,7 @@
         "wifi": true,
         "aire acondicionado": true,
         "descripcion": "Casa muy bonita en el mar ",
-        "fotoUrls": "https://placehold.co/600x400",
+        "fotoUrls": "https://cdn.pixabay.com/photo/2022/08/17/09/15/houses-7391985_1280.jpg",
         "destino": "Asturias"
     },
     {
@@ -83,7 +83,7 @@
         "wifi": false,
         "aire acondicionado": true,
         "descripcion": "Casa muy bonita en el mar ",
-        "fotoUrls": "https://placehold.co/600x400",
+        "fotoUrls": "https://cdn.pixabay.com/photo/2022/08/17/09/15/houses-7391985_1280.jpg",
         "destino": "Asturias"
     },
     {
@@ -100,7 +100,7 @@
         "wifi": false,
         "aire acondicionado": false,
         "descripcion": "Casa muy bonita en el mar ",
-        "fotoUrls": "https://placehold.co/600x400",
+        "fotoUrls": "https://cdn.pixabay.com/photo/2022/08/17/09/15/houses-7391985_1280.jpg",
         "destino": "Asturias"
     },
     {
@@ -117,7 +117,7 @@
         "wifi": true,
         "aire acondicionado": true,
         "descripcion": "Casa muy bonita en el mar ",
-        "fotoUrls": "https://placehold.co/600x400",
+        "fotoUrls": "https://cdn.pixabay.com/photo/2022/08/17/09/15/houses-7391985_1280.jpg",
         "destino": "Asturias"
     },
     {
@@ -134,7 +134,7 @@
         "wifi": true,
         "aire acondicionado": false,
         "descripcion": "Casa muy bonita en el mar ",
-        "fotoUrls": "https://placehold.co/600x400",
+        "fotoUrls": "https://cdn.pixabay.com/photo/2022/08/17/09/15/houses-7391985_1280.jpg",
         "destino": "Asturias"
     },
     {
@@ -151,7 +151,7 @@
         "wifi": true,
         "aire acondicionado": false,
         "descripcion": "Casa muy bonita en el mar ",
-        "fotoUrls": "https://placehold.co/600x400",
+        "fotoUrls": "https://cdn.pixabay.com/photo/2022/08/17/09/15/houses-7391985_1280.jpg",
         "destino": "Asturias"
     },
     {
@@ -168,7 +168,7 @@
         "wifi": true,
         "aire acondicionado": true,
         "descripcion": "Casa muy bonita en el mar ",
-        "fotoUrls": "https://placehold.co/600x400",
+        "fotoUrls": "https://cdn.pixabay.com/photo/2022/08/17/09/15/houses-7391985_1280.jpg",
         "destino": "Asturias"
     }
 ],

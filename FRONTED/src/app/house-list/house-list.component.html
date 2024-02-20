@@ -9,7 +9,7 @@
           @for (house of houses; track house.id) {
           <tr>
             <td>
-              <a [routerLink]="['/casas', house.id, 'detalle']">
+              <a [routerLink]="['/casas', house.id, 'detalles']">
                 <img style="max-width: 200px;" [src]="house.fotoUrls" class="img-fluid">
               </a>
 
@@ -17,24 +17,24 @@
 
               </div>
              
-            <td>{{house.titulo}}</td>
+            <td style="vertical-align:middle">{{house.titulo}}</td>
     
-    <div>
-      <td>Destino: {{house.destino}}</td>
-    </div>
     
-    <td>{{house.descripcion}} </td>
+      <td style="vertical-align:middle">Destino: {{house.destino}}</td>
+   
+    
+    <td style="vertical-align:middle">{{house.descripcion}} </td>
 
 
 
-    <td>
+    <td style="vertical-align:middle">
       <button type="button" class="btn btn-success me-2" [routerLink]="['/casas', house.id, 'detalle']">
         <i class="bi bi-eye"></i>
         Ver detalle</button>
 
     </td>
-    <td>
-      <button type="button" class="btn btn-primary" [routerLink]="['/casas', house.id, 'reservas']">
+    <td style="vertical-align:middle">
+      <button type="button" class="btn btn-primary" [routerLink]="['/reservas']">
 
         Hacer reserva</button>
 

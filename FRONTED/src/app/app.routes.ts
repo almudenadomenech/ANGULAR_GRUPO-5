@@ -13,19 +13,19 @@ export const routes: Routes = [
     },
   
     {
-        path: 'casas',
+        path: 'houses',
         component: HouseListComponent
     },
     {
-        path: 'casas/:id/detalles',
+        path: 'houses/:id/detail',
         component: HouseDetailComponent
     },
     {
-        path: 'reservas',
+        path: 'booking',
         component: BookingListComponent
     },
     {
-        path: 'reservas/:id/detalles',
+        path: 'bokking/:id/detail',
         component: BookingDetailComponent
     }
 ];

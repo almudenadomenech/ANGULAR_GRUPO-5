@@ -3,22 +3,22 @@ export interface House {
 
     id: number;
 
-    titulo: string;
-    habitaciones: number;
-    banos: number;
-    precio: number;
+    title: string;
+    bedrooms: number;
+    bathrooms: number;
+    price: number;
 
-    metros2: number;
-    destino: string;
+    meters: number;
+    destination: string;
 
     petFriendly: boolean;
-    piscina: boolean;
-    jardin: boolean;
-    terraza: boolean;
+    pool: boolean;
+    garden: boolean;
+    terrace: boolean;
     wifi: boolean;
-    aireAcondicionado: boolean;
+    air: boolean;
     
-    descripcion: string;
+    description: string;
     fotoUrls: string [];
    
     

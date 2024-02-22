@@ -2,16 +2,16 @@ export interface User {
 
     id: number;
     
-    nombre: string;
-    apellido: string;
+    firstName: string;
+    lastName: string;
     email: string;
-    telefono: string;
+    phone: string;
     nif: string;
     password: string;
 
 
-    calle: string;
-    ciudad: string;
-    cpdigoPostal: string;
+    street: string;
+    city: string;
+    postalCode: string;
     
 }

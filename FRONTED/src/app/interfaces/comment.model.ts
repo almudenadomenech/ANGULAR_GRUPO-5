@@ -7,6 +7,6 @@ export interface Comment{
     rating: number;
     opinion: string;
 
-    usuarios: User;
-    casa: House;
+    users: User;
+    houses: House;
 }

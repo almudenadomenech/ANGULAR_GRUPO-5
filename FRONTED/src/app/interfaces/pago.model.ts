@@ -1,9 +1,9 @@
 import { User } from "./user.model";
 
-export interface Pago {
+export interface Payment {
 
-    tarjeta: boolean;
+    creditCard: boolean;
     biZum: boolean;
     payPal: boolean;
-    usuario: User;
+    user: User;
 }

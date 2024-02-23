@@ -1,5 +1,5 @@
 {
-    "houses":
+    "house":
 [
     {
         "id": 1,
@@ -157,7 +157,6 @@
       "entryDate": "23/02/2023",
       "departureDate": "25/06/2023",
       "people": 2,
-      "status": false,
       "destination": null,
       "user": 
       {
@@ -188,6 +187,17 @@
         "description": "Casa muy bonita en el mar ",
         "photoUrls": "https://cdn.pixabay.com/photo/2022/08/17/09/15/houses-7391985_1280.jpg",
         "destination": "Asturias"   
+      },
+      "payment": {
+        "creditCard": true,
+        "biZum": false,
+        "payPal": false
+      },
+      "status": {
+        "pending": false,
+        "confirmed": true,
+        "completed": false,
+        "cancelled": false
       }
   },
   {
@@ -195,9 +205,8 @@
       "entryDate": "26/06/2023",
       "departureDate": "29/05/2023",
       "people": 9,
-      "status": false,
       "destination": null,
-      "users": {
+      "user": {
         "id": 2,
         "firstName": "Pierson",
         "lastName": "Blackburne",
@@ -209,7 +218,7 @@
         "city": "Xianju",
         "postalCode": 26664
       },
-      "houses": {
+      "house": {
         "id": 2,
         "title": "Coop",
         "bedrooms": 5,
@@ -225,16 +234,27 @@
         "description": "Casa muy bonita en el mar ",
         "photoUrls": "https://cdn.pixabay.com/photo/2022/08/17/09/15/houses-7391985_1280.jpg",
         "destination": "Asturias"
+      },
+      "payment": {
+        "creditCard": true,
+        "biZum": false,
+        "payPal": false
+      },
+      "status": {
+        "pending": false,
+        "confirmed": true,
+        "completed": false,
+        "cancelled": false
       }
+      
   },
   {
       "id": 3,
       "entryDate": "12/08/2023",
       "departureDate": "18/02/2023",
       "people": 1,
-      "status": false,
       "destination": "Provence-Alpes-Côte d'Azur",
-      "users": {
+      "user": {
         "id": 3,
         "firstName": "Dolf",
         "lastName": "Ritmeier",
@@ -247,7 +267,7 @@
         "postalCode": 64434
 
       },
-      "casa": {
+      "house": {
         "id": 3,
         "title": "Virgil",
         "bedrooms": 1,
@@ -263,6 +283,17 @@
         "description": "Casa muy bonita en el mar ",
         "photoUrls": "https://cdn.pixabay.com/photo/2022/08/17/09/15/houses-7391985_1280.jpg",
         "destination": "Asturias"
+      },
+      "payment": {
+        "creditCard": true,
+        "biZum": false,
+        "payPal": false
+      },
+      "status": {
+        "pending": false,
+        "confirmed": true,
+        "completed": false,
+        "cancelled": false
       }
   },
   {
@@ -270,9 +301,8 @@
       "entryDate": "13/05/2023",
       "departureDate": "15/01/2024",
       "people": 4,
-      "status": true,
       "destination": "Québec",
-      "users": {
+      "user": {
         "id": 4,
         "firstName": "Letti",
         "lastName": "Campion",
@@ -285,17 +315,35 @@
         "postalCode": 86273
 
       },
-      "casa": {
-        "id": 4,
-        "firstName": "Letti",
-        "lastName": "Campion",
-        "email": "lcampion3@issuu.com",
-        "phone": "+381 965 514 5101",
-        "nif": "11111111 D",
-        "password": "cY5}d#sPm.u$",
-        "street": "5 American Plaza",
-        "city": "Kovilj",
-        "postalCode": 86273
+      "house": {
+
+      "id": 4,
+      "title": "Harriet",
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "price": 270.11,
+      "meters": 81,
+      "petFriendly": false,
+      "pool": false,
+      "garden": false,
+      "terrace": true,
+      "wifi": true,
+      "air": true,
+      "description": "Casa muy bonita en el mar ",
+      "photoUrls": "https://cdn.pixabay.com/photo/2022/08/17/09/15/houses-7391985_1280.jpg",
+      "destination": "Asturias"
+      },
+      
+      "payment": {
+        "creditCard": true,
+        "biZum": false,
+        "payPal": false
+      },
+      "status": {
+        "pending": false,
+        "confirmed": true,
+        "completed": false,
+        "cancelled": false
       }
   },
   {
@@ -303,7 +351,6 @@
       "entryDate": "02/06/2023",
       "departureDate": "15/08/2023",
       "people": 5,
-      "status": true,
       "destination": null,
       "users": {
         "id": 5,
@@ -333,6 +380,17 @@
         "description": "Casa muy bonita en el mar ",
         "photoUrls": "https://cdn.pixabay.com/photo/2022/08/17/09/15/houses-7391985_1280.jpg",
         "destination": "Asturias"
+      },
+      "payment": {
+        "creditCard": true,
+        "biZum": false,
+        "payPal": false
+      },
+      "status": {
+        "pending": false,
+        "confirmed": true,
+        "completed": false,
+        "cancelled": false
       }
   }
   
@@ -342,37 +400,90 @@
         "id": 1,
         "rating": 1.2,
         "opinion": "Devolved interactive system engine",
-        "user": "wkonertz0",
-        "house": "Webb Konertz"
+        "user": 
+      {
+        "id":1,
+        "firstName": "Farra",
+        "lastName": "Eyrl",
+        "email": "feyrl0@cnbc.com"
+      }, 
+      "house": {
+        "id": 1,
+        "title": "Hershel",
+        "destination": "Asturias"
+      }
+       
     },
     {
         "id": 2,
         "rating": 4.6,
         "opinion": "Robust content-based adapter",
-        "user": "azappel1",
-        "house": "Ali Zappel"
+        "users": {
+          "id": 2,
+          "firstName": "Pierson",
+          "lastName": "Blackburne",
+          "email": "pblackburne1@imdb.com"
+       
+        },
+        "house": {
+          "id": 2,
+          "title": "Coop",
+          "destination": "Asturias"
+        }
     },
     {
         "id": 3,
         "rating": 4.5,
         "opinion": "Cross-platform bandwidth-monitored paradigm",
-        "user": "alyle2",
-        "house": "Aldin Lyle"
+        "user": {
+          "id": 3,
+          "firstName": "Dolf",
+          "lastName": "Ritmeier",
+          "email": "dritmeier2@ameblo.jp"  
+        },
+        "house": {
+          "id": 3,
+          "title": "Virgil",
+          "destination": "Asturias"          
+        }
     },
     {
         "id": 4,
         "rating": 1.9,
         "opinion": "Assimilated holistic alliance",
-        "usuarios": "bsloss3",
-        "house": "Buddie Sloss"
+        "user": {
+          "id": 4,
+          "firstName": "Letti",
+          "lastName": "Campion",
+          "email": "lcampion3@issuu.com"
+        },
+        "house": {
+
+          "id": 4,
+          "title": "Harriet",
+          "destination": "Asturias"
+          
+          }
+
     },
     {
         "id": 5,
         "rating": 3.4,
         "opinion": "Down-sized tangible circuit",
-        "usuarios": "msouthon4",
-        "house": "Mickey Southon"
-    }
-    
+        "users": {
+          "id": 5,
+          "firstName": "Ferdinande",
+          "lastName": "Pionter",
+          "email": "fpionter4@liveinternet.ru"          
+        },
+        "house": {
+          "id": 5,
+          "title": "Lanny",
+          "destination": "Asturias"
+         
+        }  
+    }    
 ]
+
+
 }

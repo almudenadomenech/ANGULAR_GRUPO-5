@@ -52,3 +52,10 @@ tipo de dato concreto como por ejemplo: Producto,, Casa, Curso, Empresa, Coche:
  ## DISEÑO PAGINA PRINCIPAL EN BOOSTRAP
  
  https://getbootstrap.com/docs/5.3/examples/
+
+ ## LEVANTAR EL BACKEND
+
+En otra terminal
+json-server  db.json
+
+## BOOSTRAP: CAROUSEL, UTILIES: objet file

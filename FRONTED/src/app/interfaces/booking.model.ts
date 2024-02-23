@@ -1,19 +1,19 @@
 import { BookingStatus } from "./booking-status.model";
 import { House } from "./house.model";
-import { Pago } from "./pago.mdel";
+import { Payment } from "./payment.model";
 import { User} from "./user.model";
 
 export interface Booking {
         id: number;
 
-        fechaEntrada: Date;
-        fechaSalida: Date,
-        personas: number;
-        estatus: BookingStatus;
-        pago: Pago;
+        entryDate: Date;
+        departureDate: Date,
+        people: number;
+        destination: string;
         
-        destino: string;
-        
-        usuario: User;
-        casa: House;
+        users: User;
+        houses: House;
+        payment: Payment;
+        status: BookingStatus;
+
 }

@@ -1,6 +1,7 @@
 export interface BookingStatus {
-    pendient: boolean;
-    confirmada: boolean;
-    completada: boolean;
-    cancelada: boolean;
+    
+    pending: boolean;
+    confirmed: boolean;
+    completed: boolean;
+    cancelled: boolean;
 }

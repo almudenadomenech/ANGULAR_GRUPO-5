@@ -1,1 +1,57 @@
-<p>house-list works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <!-- <h1 class="mt-5">Listado de Casas </h1> -->
+      <table class="table mt-5">
+        <thead>
+        </thead>
+        <tbody>
+          @for (house of houses; track house.id) {
+          <tr>
+            <td>
+              <a [routerLink]="['/houses', house.id, 'detail']">
+                <img style="max-width: 200px;" [src]="house.photoUrls" class="img-fluid">
+              </a>
+
+              <div>
+
+              </div>
+             
+            <td style="vertical-align:middle">{{house.title}}</td>
+    
+    
+      <td style="vertical-align:middle">Destino: {{house.destination}}</td>
+   
+    
+    <td style="vertical-align:middle">{{house.description}} </td>
+
+
+
+    <td style="vertical-align:middle">
+      <button type="button" class="btn btn-success me-2" [routerLink]="['/houses', house.id, 'detail']">
+        <i class="bi bi-eye"></i>
+        Ver detalle</button>
+
+    </td>
+    <td style="vertical-align:middle">
+      <button type="button" class="btn btn-primary" [routerLink]="['/booking']">
+
+        Hacer reserva</button>
+
+
+    </td>
+    </tr>
+    }
+    </tbody>
+    </table>
+
+  </div>
+
+</div>
+
+</div>
+
+
+   
+
+   

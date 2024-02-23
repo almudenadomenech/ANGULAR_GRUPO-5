@@ -11,8 +11,8 @@ export interface Booking {
         people: number;
         destination: string;
         
-        user: User;
-        house: House;
+        users: User;
+        houses: House;
         payment: Payment;
         status: BookingStatus;
 

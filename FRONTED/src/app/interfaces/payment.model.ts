@@ -6,5 +6,5 @@ export interface Payment {
     creditCard: boolean;
     biZum: boolean;
     payPal: boolean;
-    user: User;
+    users: User;
 }

@@ -1,5 +1,5 @@
 {
-    "house":
+    "houses":
 [
     {
         "id": 1,
@@ -88,7 +88,7 @@
     }
     
 ],
-"user":[
+"users":[
     {
         "id": 1,
         "firstName": "Farra",
@@ -158,7 +158,7 @@
       "departureDate": "25/06/2023",
       "people": 2,
       "destination": null,
-      "user": 
+      "users": 
       {
         "id":1,
         "firstName": "Farra",
@@ -171,7 +171,7 @@
         "city": "Khāsh",
         "postalCode": 55344
       }, 
-      "house": {
+      "houses": {
         "id": 1,
         "title": "Hershel",
         "bedrooms": 2,
@@ -206,7 +206,7 @@
       "departureDate": "29/05/2023",
       "people": 9,
       "destination": null,
-      "user": {
+      "users": {
         "id": 2,
         "firstName": "Pierson",
         "lastName": "Blackburne",
@@ -218,7 +218,7 @@
         "city": "Xianju",
         "postalCode": 26664
       },
-      "house": {
+      "houses": {
         "id": 2,
         "title": "Coop",
         "bedrooms": 5,
@@ -254,7 +254,7 @@
       "departureDate": "18/02/2023",
       "people": 1,
       "destination": "Provence-Alpes-Côte d'Azur",
-      "user": {
+      "users": {
         "id": 3,
         "firstName": "Dolf",
         "lastName": "Ritmeier",
@@ -267,7 +267,7 @@
         "postalCode": 64434
 
       },
-      "house": {
+      "houses": {
         "id": 3,
         "title": "Virgil",
         "bedrooms": 1,
@@ -302,7 +302,7 @@
       "departureDate": "15/01/2024",
       "people": 4,
       "destination": "Québec",
-      "user": {
+      "users": {
         "id": 4,
         "firstName": "Letti",
         "lastName": "Campion",
@@ -315,7 +315,7 @@
         "postalCode": 86273
 
       },
-      "house": {
+      "houses": {
 
       "id": 4,
       "title": "Harriet",
@@ -364,7 +364,7 @@
         "city": "Klishkivtsi",
         "postalCode": 15233
       },
-      "house": {
+      "houses": {
         "id": 5,
         "title": "Lanny",
         "bedrooms": 2,
@@ -400,14 +400,14 @@
         "id": 1,
         "rating": 1.2,
         "opinion": "Devolved interactive system engine",
-        "user": 
+        "users": 
       {
         "id":1,
         "firstName": "Farra",
         "lastName": "Eyrl",
         "email": "feyrl0@cnbc.com"
       }, 
-      "house": {
+      "houses": {
         "id": 1,
         "title": "Hershel",
         "destination": "Asturias"
@@ -425,7 +425,7 @@
           "email": "pblackburne1@imdb.com"
        
         },
-        "house": {
+        "houses": {
           "id": 2,
           "title": "Coop",
           "destination": "Asturias"
@@ -435,13 +435,13 @@
         "id": 3,
         "rating": 4.5,
         "opinion": "Cross-platform bandwidth-monitored paradigm",
-        "user": {
+        "users": {
           "id": 3,
           "firstName": "Dolf",
           "lastName": "Ritmeier",
           "email": "dritmeier2@ameblo.jp"  
         },
-        "house": {
+        "houses": {
           "id": 3,
           "title": "Virgil",
           "destination": "Asturias"          
@@ -451,13 +451,13 @@
         "id": 4,
         "rating": 1.9,
         "opinion": "Assimilated holistic alliance",
-        "user": {
+        "users": {
           "id": 4,
           "firstName": "Letti",
           "lastName": "Campion",
           "email": "lcampion3@issuu.com"
         },
-        "house": {
+        "houses": {
 
           "id": 4,
           "title": "Harriet",
@@ -476,7 +476,7 @@
           "lastName": "Pionter",
           "email": "fpionter4@liveinternet.ru"          
         },
-        "house": {
+        "houses": {
           "id": 5,
           "title": "Lanny",
           "destination": "Asturias"

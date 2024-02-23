@@ -19,7 +19,7 @@ export interface House {
     air: boolean;
     
     description: string;
-    fotoUrls: string [];
+    photoUrls: string [];
    
     
 }

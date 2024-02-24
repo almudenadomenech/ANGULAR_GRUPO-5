@@ -1,11 +1,8 @@
 # ANGULAR_GRUPO-5 
 
-## CREACIÓN DE NUEVO PROYECTO ANGULAR CON BOOTSTRAP Y BOOTSTRAP-ICONS
-
 ### PASO 1: CREAR PROYECTO ANGULAR CON ENRUTADO
 
-ng new angular-006-servicios --skip-git --style=css --routing=true --ssr=false
-ng new angular- --skip-git --style=css --routing=true --ssr=false
+ng new angular --skip-git --style=css --routing=true --ssr=false
 
 ### PASO 2: ENTRAR AL PROYECTO
 
@@ -27,35 +24,88 @@ En angular.json hay que agregar el bootstrap-icons.min.css a styles:
               "src/styles.css"
             ],
 
-## INTERFACE
-
-Utilizamos las interfaces para definir la estructura que tendrá un nuevo
-tipo de dato concreto como por ejemplo: Producto,, Casa, Curso, Empresa, Coche:
-
-
- interface Producto {
-    id: number;
-    title: string;
-    color: string;
-    price: number;
-
- }
-
- Cada tributo en una interface prodría corresponder a una columna en una
- tabla.
-
- ## API DE PRODUCTOS DEMO
-
- https://fakestoreapi.com/
-
-
- ## DISEÑO PAGINA PRINCIPAL EN BOOSTRAP
- 
- https://getbootstrap.com/docs/5.3/examples/
-
- ## LEVANTAR EL BACKEND
+## PASO 5: LEVANTAR EL BACKEND
 
 En otra terminal
-json-server  db.json
+json-server --watch db.json
 
-## BOOSTRAP: CAROUSEL, UTILIES: objet file
+## PASO 6: CREAR COMPONENTES
+
+ng g c nombre del componente
+
+## PASO 7: HACER EL ENRUTADO
+
+Empezar con el list y luego detalle
+Se pueden ir enrutando a medida que crece el proyecto, 
+no hace falta hacerlos todos de golpe.
+
+## PASO 8: CREAR LA INTERFACES
+1. Crear una carpeta dentro de app
+2. Crear las rutas en el app.component.htm en el navbar
+
+## PASO 9: HACER FORMULARIOS
+
+en el ts del componente en imports
+ReactiveFormsModule
+
+## ACTUALIZAR ANGULAR
+
+1. Desinstalar Angular:
+  npm uninstall -g @angular/cli
+
+2. Instalar la version:
+  npm install -g @angular/cli@17.2.0
+
+3. Crear proyecto:
+ng new angular-009-forms-bootstrap --skip-git --style=css --routing=true --ssr=false
+
+4. Boostrap:
+  ng add @ng-bootstrap/ng-bootstrap
+
+## HACER UN FORMULARIO
+
+## CONECTAR FORMULARIOS
+
+angular-009-forms-bootstrap:
+
+* product-list
+* product-detail
+* product-form: creación y actualización
+
+Objetivo: tener desarrollado un CRUD completo sobre productos.
+
+## PASOS
+
+1. ng generate component product-list
+
+2. ng generate component product-detail
+
+3. Enrutado en app.routes.ts
+
+4. router-outlet en app.component.html
+
+5. Copiar código: product-list.component.ts y product-list.component.html
+    * agregar botones para llegar a product-form para crear (POST) y actualizar (PUT)
+
+6. Copiar código: product-detail.component.ts y product-detail.component.html
+    * agregar botón para llegar a product-form para actualizar (PUT)
+
+
+## FUNCIONALIDAD ACTUALIZAR PRODUCTO (PUT)
+
+1. Capturar el id (1,2,3 ...) de la URL utilizando activatedRoute de forma igual al product-detail.
+
+2. Una vez capturado el id, si existe, entonces hacer un GET con httpClient para traer el producto por id, por ejemplo el producto 1.
+
+3. Cargar los valores del producto en el formulario de productForm. De esta forma el formulario aparecerá con los valores del producto ya cargados para editarlos.
+
+4. En el método save, distinguir si existe id entonces hacer un update PUT, si no existe id entonces hacer un create POST.
+
+
+## ACTUALIZAR DESDE FORMULARIO
+
+1. Enrutado:  
+  * /products/: id/update se puede llegar al formulario
+  * /produ
+2. 
+

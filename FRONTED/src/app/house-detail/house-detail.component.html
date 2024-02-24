@@ -14,8 +14,8 @@
   <div class="row">
     <div class="col-4 text-center">
 
-      @if (house && house.fotoUrls && house.fotoUrls.length > 0){
-      <img class="img-fluid" [src]="house.fotoUrls" alt="Foto casa">
+      @if (house && house.photoUrls && house.photoUrls.length > 0){
+      <img class="img-fluid" [src]="house.photoUrls" alt="Foto casa">
       } @else {
       <p class="py-5">Este casa no tiene imagen de perfil.</p>
       <img class="img-fluid" src="https://ui-avatars.com/api/?name=A&size=256">
@@ -34,21 +34,21 @@
           <div class="col d-flex align-items-start">
             <i class="bi bi-house-heart"></i>            <div>
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Nombre de la casa</h3>
-              <p>{{house.nombre}}</p>
+              <p>{{house.title}}</p>
             </div>
           </div>
           <div class="col d-flex align-items-start">
             <i class="bi bi-phone text-info flex-shrink-0 me-3 fs-2"></i>
             <div>
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Número de habitaciones</h3>
-              <p>{{house.habitaciones}}</p>
+              <p>{{house.bedrooms}}</p>
             </div>
           </div>
           <div class="col d-flex align-items-start">
             <i class="bi bi-cup-straw text-info flex-shrink-0 me-3 fs-2"></i>
             <div>
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Núnero de baños</h3>
-              <p>{{house.banos}}</p>
+              <p>{{house.bathrooms}}</p>
             </div>
           </div>
           <div class="col d-flex align-items-start">
@@ -57,7 +57,7 @@
             </svg>
             <div>
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Precio</h3>
-              <p>{{house.precio}}</p>
+              <p>{{house.price}}</p>
             </div>
           </div>
           <div class="col d-flex align-items-start">
@@ -66,7 +66,7 @@
             </svg>
             <div>
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Metros cuadrados</h3>
-              <p>{{house.m2}}</p>
+              <p>{{house.meters}}</p>
             </div>
           </div>
           <div class="col d-flex align-items-start">
@@ -83,7 +83,7 @@
               </svg>
               <div>
                 <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Piscina</h3>
-                <p>{{house.piscina}}</p>
+                <p>{{house.pool}}</p>
               </div>
             </div>
             <div class="col d-flex align-items-start">
@@ -92,7 +92,7 @@
               </svg>
               <div>
                 <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Jardin</h3>
-                <p>{{house.jardin}}</p>
+                <p>{{house.garden}}</p>
               </div>
             </div>
             <div class="col d-flex align-items-start">
@@ -101,7 +101,7 @@
               </svg>
               <div>
                 <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Terraza</h3>
-                <p>{{house.terraza}}</p>
+                <p>{{house.terrace}}</p>
               </div>
             </div>
             <div class="col d-flex align-items-start">
@@ -119,7 +119,7 @@
               </svg>
               <div>
                 <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Aire acondicionado</h3>
-                <p>{{house.aireAcondicionado}}</p>
+                <p>{{house.air}}</p>
               </div>
             </div>
             <div class="col d-flex align-items-start">
@@ -128,7 +128,7 @@
               </svg>
               <div>
                 <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Descripción</h3>
-                <p>{{house.descripcion}}</p>
+                <p>{{house.description}}</p>
               </div>
             </div>
 

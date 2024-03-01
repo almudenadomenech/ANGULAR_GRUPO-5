@@ -1,1 +1,144 @@
-<p>house-form works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col">
+
+            <h2 class="mt-3">Introduce los detalles de tu casa</h2>
+            <form class="mt-4" [formGroup]="houseForm" (ngSubmit)="save()">
+
+                <input type="hidden" formControlName="id">
+
+                <div class="row">
+                    <div class="col">
+                        <label for="title">Nombre de la casa</label>
+                        <input type="text" class="form-control" id="title" placeholder="" aria-label="title">
+                    </div>
+                    <!-- PREGUNTAR A ALAN Hemos puesto texto por el guión pero son números-->
+                    <div class="col">
+                        <label for="places">Plazas</label>
+                        <input type="text"  class="form-control" id="places"
+                            formControlName="places" placeholder="" aria-label="places">
+                    </div>
+
+                    <div class="col">
+                        <label for="bedrooms">Habitaciones</label>
+                        <input type="number" min="1" max="10" step="1" class="form-control" id="bedrooms"
+                            formControlName="bedrooms" placeholder="" aria-label="bedrooms">
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+
+                            <label for="bathrooms">Baños</label>
+                            <input type="number" min="1" max="10" step="1" class="form-control" id="bathrooms"
+                                formControlName="bathrooms" placeholder="" aria-label="bathrooms">
+
+
+
+
+                        </div>
+
+                        <div class="col">
+                            <label for="price">Precio (€)</label>
+                            <input type="number" min="0" max="300" step="0.01" class="form-control" id="price"
+                                formControlName="price" placeholder="" aria-label="price">
+                        </div>
+
+                        <div class="col">
+                            <label for="meters">Metros cuadrados</label>
+                            <input type="number" min="50" max="1000" step="1" class="form-control" id="meters"
+                                formControlName="meters" placeholder="" aria-label="meters">
+                        </div>
+
+                        <div class="col">
+                            <label for="destination">Unicación</label>
+                            <select class="form-select" id="destination"
+                            formControlName="destination" aria-label="destination">
+
+                                <option selected>Selecciona Ubicación</option>
+                                <option value="1">Madrid</option>
+                                <option value="2">Almeria</option>
+                                <option value="3">Asturias</option>
+                              </select>
+
+                        </div>
+
+                        <div class="mt-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="petFriendly"
+                                    formControlName="petFriendly">
+                                <label class="form-check-label" for="petFriendly">
+                                    PetFriendly
+                                </label>
+                            </div>
+
+                            
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="pool"
+                                        formControlName="pool">
+                                    <label class="form-check-label" for="pool">
+                                        Piscina
+                                    </label>
+                                </div>
+                            
+                           
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="garden"
+                                    formControlName="garden">
+                                <label class="form-check-label" for="garden">
+                                    Jardin
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="terrace"
+                                    formControlName="terrace">
+                                <label class="form-check-label" for="terrace">
+                                    Terraza
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="wifi"
+                                    formControlName="wifi">
+                                <label class="form-check-label" for="wifi">
+                                    WiFi
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="air"
+                                    formControlName="air">
+                                <label class="form-check-label" for="air">
+                                    Aire acondicionado
+                                </label>
+                            </div>
+                        </div>
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="description" 
+                                formControlName="description" style="height: 100px"></textarea>
+                                <label for="description">Descripción</label>
+                              </div>
+                            
+
+
+                        </div>
+
+
+        
+
+                </div>
+
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                    <button class="btn btn-danger" type="submit">Cancelar</button>
+                  </div>
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>

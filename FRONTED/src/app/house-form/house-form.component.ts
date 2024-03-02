@@ -32,7 +32,7 @@ export class HouseFormComponent implements OnInit{
     garden: new FormControl(false),
     terrace: new FormControl(false),
     wifi: new FormControl(false),
-    air: new FormControl(true),
+    air: new FormControl(false),
     description: new FormControl('', Validators.required),
     photoUrls: new FormControl ([])
   });

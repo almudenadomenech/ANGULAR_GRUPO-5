@@ -91,7 +91,7 @@
       "destination": "Asturias"
     },
     {
-      "id": 0,
+      "id": "0",
       "title": "",
       "places": "25",
       "bedrooms": 6,
@@ -109,7 +109,7 @@
       "photoUrls": []
     },
     {
-      "id": 0,
+      "id": "0",
       "title": "",
       "places": "25",
       "bedrooms": 6,
@@ -124,6 +124,24 @@
       "wifi": false,
       "air": false,
       "description": "",
+      "photoUrls": []
+    },
+    {
+      "id": 0,
+      "title": "",
+      "places": "25",
+      "bedrooms": 6,
+      "bathrooms": 5,
+      "price": 90,
+      "meters": 150,
+      "destination": "",
+      "petFriendly": false,
+      "pool": true,
+      "garden": true,
+      "terrace": false,
+      "wifi": false,
+      "air": true,
+      "description": "Junto al mar",
       "photoUrls": []
     }
   ],

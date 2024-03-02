@@ -2,7 +2,12 @@
     <div class="row">
         <div class="col">
 
-            <h2 class="mt-3">Introduce los detalles de tu casa</h2>
+            @if(isUpdate){
+                <h2 class="mt-5">Actualizar/Editar casa existente</h2>
+            } @else {
+                <h2 class="mt-3">Introduce los detalles de tu casa</h2>
+            }
+            
             <form class="mt-4" [formGroup]="houseForm" (ngSubmit)="save()">
 
                 <input type="hidden" formControlName="id">
@@ -50,7 +55,7 @@
                         </div>
 
                         <div class="col">
-                            <label for="destination">Unicación</label>
+                            <label for="destination">Ubicación</label>
                             <select class="form-select" id="destination"
                             formControlName="destination" aria-label="destination">
 

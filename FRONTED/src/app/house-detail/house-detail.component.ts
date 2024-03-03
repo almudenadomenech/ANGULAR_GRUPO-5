@@ -13,7 +13,7 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 export class HouseDetailComponent implements OnInit {
 
   house: House | undefined;
-houses: any;
+  
 
   constructor(private http: HttpClient,
     private activatedRoute: ActivatedRoute) { }
@@ -21,7 +21,7 @@ houses: any;
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params => {
       let id = params['id'];
-      this.http.get<any>(`http://localhost:3000/houses/${id}`).subscribe(house => this.house = house);
+      this.http.get<House>(`http://localhost:3000/houses/${id}`).subscribe(house => this.house = house);
     }
     );
   }

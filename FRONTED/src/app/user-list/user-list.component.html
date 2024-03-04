@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="mt-5">Listado de Usuarios Rural House<i class="bi bi-user"></i></h1>
+            <table class="table table-striped mt-5">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">NIF</th>
+                        <th scope="col">Street</th>
+                        <th scope="col">City</th>
+                        <th scope="col">Postal Code</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for(user of users; track user.id) {
+                        <tr>
+                            <a [routerLink]="['/usuarios', user.id,'detalle']"></a>
+                                
+                            <td>{{ user.id }}</td>
+                            <td>{{ user.firstName }}</td>
+                            <td>{{ user.lastName }}</td>
+                            <td>{{ user.email }}</td>
+                            <td>{{ user.phone }}</td>
+                            <td>{{ user.nif }}</td>
+                            <td>{{ user.street }}</td>
+                            <td>{{ user.city }}</td>
+                            <td>{{ user.postalCode }}</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

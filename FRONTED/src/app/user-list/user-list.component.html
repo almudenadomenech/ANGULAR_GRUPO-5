@@ -18,12 +18,17 @@
                 </thead>
                 <tbody>
                     @for(user of users; track user.id) {
-                        <tr>
-                            <a [routerLink]="['/usuarios', user.id,'detalle']">
-                                <img style="max-width:100px;" [src]="user.photo">
-                              </a>
-                                
-                            <td>{{ user.id }}</td>
+                        <td>
+                            tr>
+                <td>{{user.id}}</td>
+                <td>
+               
+                        </td>
+                        <a [routerLink]="['/Usuario', user.id, 'detalle']">
+                            <img style="max-width:100px;" [src]="user.photo">
+                          </a>
+      
+                         
                             <td>{{ user.firstName }}</td>
                             <td>{{ user.lastName }}</td>
                             <td>{{ user.email }}</td>
@@ -40,8 +45,6 @@
                     Ver detalle</button>
                    </td>   
                    
-                        </tr>
-
                         
                     }
                 </tbody>

@@ -4,6 +4,7 @@ import { HouseDetailComponent } from './house-detail/house-detail.component';
 import { BookingListComponent } from './booking-list/booking-list.component';
 import { BookingDetailComponent } from './booking-detail/booking-detail.component';
 import { HomeComponent } from './home/home.component';
+import { BookingFormComponent } from './booking-form/booking-form.component';
 
 
 export const routes: Routes = [
@@ -26,7 +27,11 @@ export const routes: Routes = [
         component: BookingListComponent
     },
     {
-        path: 'bokking/:id/detail',
+        path: 'boking/:id/detail',
         component: BookingDetailComponent
+    }, 
+    {
+        path: 'booking/form',
+        component: BookingFormComponent
     }
 ];

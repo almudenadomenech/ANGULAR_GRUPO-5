@@ -10,6 +10,7 @@ export interface Booking {
         departureDate: Date,
         people: number;
         destination: string;
+        available: boolean;
         
         users: User;
         houses: House;

@@ -8,15 +8,15 @@
       "bathrooms": 1,
       "price": 35,
       "meters": 303,
+      "destination": "Asturias",
       "petFriendly": true,
       "pool": true,
       "garden": false,
       "terrace": false,
-      "wifi": false,
+      "wifi": true,
       "air": false,
       "description": "Casa muy bonita en el mar ",
-      "photoUrls": "https://cdn.pixabay.com/photo/2022/08/17/09/15/houses-7391985_1280.jpg",
-      "destination": "Asturias"
+      "photoUrls": "https://cdn.pixabay.com/photo/2022/08/17/09/15/houses-7391985_1280.jpg"
     },
     {
       "id": "2",
@@ -91,298 +91,40 @@
       "destination": "Asturias"
     },
     {
-      "id": "0",
-      "title": "",
-      "places": "25",
-      "bedrooms": 6,
-      "bathrooms": 5,
-      "price": 90,
-      "meters": 150,
-      "destination": "1",
-      "petFriendly": false,
-      "pool": true,
-      "garden": true,
-      "terrace": false,
-      "wifi": false,
-      "air": true,
-      "description": "",
-      "photoUrls": []
-    },
-    {
-      "id": "0",
-      "title": "",
-      "places": "25",
-      "bedrooms": 6,
-      "bathrooms": 5,
-      "price": 90,
-      "meters": 150,
-      "destination": "1",
+      "id": "6",
+      "title": "Hontanar mo",
+      "places": "1",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "price": 1,
+      "meters": 1,
+      "destination": "Madrid",
       "petFriendly": false,
       "pool": false,
       "garden": false,
       "terrace": false,
       "wifi": false,
       "air": false,
+      "description": "H",
+      "photoUrls": []
+    },
+    {
+      "id": "7",
+      "title": "Castañar",
+      "places": "5",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "price": 70,
+      "meters": 120,
+      "destination": "",
+      "petFriendly": true,
+      "pool": false,
+      "garden": false,
+      "terrace": false,
+      "wifi": true,
+      "air": true,
       "description": "",
       "photoUrls": []
-    },
-    {
-      "id": "0",
-      "title": "",
-      "places": "25",
-      "bedrooms": 6,
-      "bathrooms": 5,
-      "price": 90,
-      "meters": 150,
-      "destination": "",
-      "petFriendly": false,
-      "pool": true,
-      "garden": true,
-      "terrace": false,
-      "wifi": false,
-      "air": true,
-      "description": "Junto al mar",
-      "photoUrls": []
-    },
-    {
-      "id": "02ff"
-    },
-    {
-      "id": "5abd"
-    },
-    {
-      "id": "503f"
-    },
-    {
-      "id": "9d2c"
-    },
-    {
-      "id": "ce3d"
-    },
-    {
-      "id": "185f"
-    },
-    {
-      "id": "7c22"
-    },
-    {
-      "id": "5324"
-    },
-    {
-      "id": "08f9"
-    },
-    {
-      "id": "ff0a"
-    },
-    {
-      "id": "794e"
-    },
-    {
-      "id": "7677"
-    },
-    {
-      "id": "9d07"
-    },
-    {
-      "id": "8011"
-    },
-    {
-      "id": "e7f1"
-    },
-    {
-      "id": "895e"
-    },
-    {
-      "id": "c4b0"
-    },
-    {
-      "id": "536f"
-    },
-    {
-      "id": "6cd7"
-    },
-    {
-      "id": "0069"
-    },
-    {
-      "id": "3382"
-    },
-    {
-      "id": "6d54"
-    },
-    {
-      "id": "b044"
-    },
-    {
-      "id": "9e60"
-    },
-    {
-      "id": "4978"
-    },
-    {
-      "id": "04f4"
-    },
-    {
-      "id": "a737"
-    },
-    {
-      "id": "3fb3"
-    },
-    {
-      "id": "16f3"
-    },
-    {
-      "id": "29eb"
-    },
-    {
-      "id": "bf93"
-    },
-    {
-      "id": "89bd"
-    },
-    {
-      "id": "2723"
-    },
-    {
-      "id": "9736"
-    },
-    {
-      "id": "419a"
-    },
-    {
-      "id": "8d0a"
-    },
-    {
-      "id": "917b"
-    },
-    {
-      "id": "d334"
-    },
-    {
-      "id": "2049"
-    },
-    {
-      "id": "da7f"
-    },
-    {
-      "id": "e16a"
-    },
-    {
-      "id": "3bfc"
-    },
-    {
-      "id": "0f1c"
-    },
-    {
-      "id": "0c6b"
-    },
-    {
-      "id": "f465"
-    },
-    {
-      "id": "1a6d"
-    },
-    {
-      "id": "9d9f"
-    },
-    {
-      "id": "e5fa"
-    },
-    {
-      "id": "343b"
-    },
-    {
-      "id": "41e3"
-    },
-    {
-      "id": "156d"
-    },
-    {
-      "id": "3fc6"
-    },
-    {
-      "id": "3f49"
-    },
-    {
-      "id": "6f0d"
-    },
-    {
-      "id": "3509"
-    },
-    {
-      "id": "f6d5"
-    },
-    {
-      "id": "2bb2"
-    },
-    {
-      "id": "8373"
-    },
-    {
-      "id": "6199"
-    },
-    {
-      "id": "5e2f"
-    },
-    {
-      "id": "2825"
-    },
-    {
-      "id": "8ccb"
-    },
-    {
-      "id": "6dd3"
-    },
-    {
-      "id": "0dd7"
-    },
-    {
-      "id": "4b97"
-    },
-    {
-      "id": "2b7f"
-    },
-    {
-      "id": "d8b6"
-    },
-    {
-      "id": "1e3c"
-    },
-    {
-      "id": "2bb0"
-    },
-    {
-      "id": "f589"
-    },
-    {
-      "id": "a605"
-    },
-    {
-      "id": "7af6"
-    },
-    {
-      "id": "d4ce"
-    },
-    {
-      "id": "e422"
-    },
-    {
-      "id": "c135"
-    },
-    {
-      "id": "b113"
-    },
-    {
-      "id": "52c3"
-    },
-    {
-      "id": "e3e7"
-    },
-    {
-      "id": "1744"
-    },
-    {
-      "id": "9619"
     }
   ],
   "users": [

@@ -14,7 +14,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 })
 export class HouseFormComponent implements OnInit{
 
-  houses: House [] = [];
+  house: House | undefined;
 
   
   houseForm = new FormGroup({
@@ -34,7 +34,7 @@ export class HouseFormComponent implements OnInit{
     wifi: new FormControl(false),
     air: new FormControl(false),
     description: new FormControl('', Validators.required),
-    photoUrls: new FormControl ([])
+    photoUrls: new FormControl<string[]>([])
   });
   
   isUpdate: boolean = false;
@@ -49,14 +49,19 @@ export class HouseFormComponent implements OnInit{
 
 
   ngOnInit(): void {
-      this.httpClient.get<House[]>('http://localhost:3000/houses')
-    .subscribe(houses => this.houses = houses); 
+      //this.httpClient.get<House[]>('http://localhost:3000/houses')
+    //.subscribe(houses => this.houses = houses); 
 
-       const url = 'http://localhost:3000/houses';
-         this.httpClient.post<House>(url, this.houses).subscribe(data => this.router.navigate(['/houses/update']));
+       //const url = 'http://localhost:3000/houses';
+
+       // ESTA LINEA DA UN ERROR. NO TRAE LA UBICACIÓN NI EL NOMBRE DE LA CASA
+         //this.httpClient.post<House>(url, this.houses).subscribe(data => this.router.navigate(['/houses/:id/update']));
 
         this.activatedRoute.params.subscribe(params => {
           let id = params['id'];
+          if (!id) 
+            return;
+
           this.httpClient.get<House>(`http://localhost:3000/houses/${id}`).subscribe(houses => {
             this.isUpdate = true
 
@@ -74,8 +79,9 @@ export class HouseFormComponent implements OnInit{
               garden: houses.garden,
               terrace: houses.terrace,
               wifi: houses.wifi,
+              air: houses.air,
               description: houses.description,
-              // photoUrls: houses.photoUrls
+              photoUrls: houses.photoUrls
             });
           });
         
@@ -88,7 +94,7 @@ export class HouseFormComponent implements OnInit{
 
     console.log('invocando save');
 
-    const houses: House = {
+    const house: House = {
       id: this.houseForm.get('id')?.value ?? 0,
       title: this.houseForm.get('title')?.value ?? '',
       places: this.houseForm.get('places')?.value ?? '',
@@ -107,17 +113,16 @@ export class HouseFormComponent implements OnInit{
       photoUrls: this.houseForm.get('photourls')?.value ?? []
     }
 
-    console.log(houses);
+    console.log(house);
 
-     /*  if(this.isUpdate){
-      const urlForUpdate = 'http://localhost:3000/houses/' + houses.id;
-      this.httpClient.put<House>(urlForUpdate, houses).subscribe(data => this.router.navigate(['/']));
+       if(this.isUpdate){
+      const urlForUpdate = 'http://localhost:3000/houses/' + house.id;
+      this.httpClient.put<House>(urlForUpdate, house).subscribe(data => this.router.navigate(['/houses']));
     } else {
       const url = 'http://localhost:3000/houses';
-        this.httpClient.post<House>(url, houses).subscribe(data => this.router.navigate(['/']));
-    }   */
-    const url = 'http://localhost:3000/houses'
-    this.httpClient.post<House>(url, houses).subscribe(data => console.log(data)); 
+        this.httpClient.post<House>(url, house).subscribe(data => this.router.navigate(['/houses']));
+    }   
+
     
   }
   compareObjects(o1: any, o2: any): boolean {

@@ -15,9 +15,10 @@
                 <div class="row">
                     <div class="col">
                         <label for="title">Nombre de la casa</label>
-                        <input type="text" class="form-control" id="title" placeholder="" aria-label="title">
+                        <input type="text" class="form-control" id="title" 
+                        formControlName="title" placeholder="" aria-label="title">
                     </div>
-                    <!-- PREGUNTAR A ALAN Hemos puesto texto por el guión pero son números-->
+                   
                     <div class="col">
                         <label for="places">Plazas</label>
                         <input type="text"  class="form-control" id="places"
@@ -57,12 +58,13 @@
                         <div class="col">
                             <label for="destination">Ubicación</label>
                             <select class="form-select" id="destination"
-                            formControlName="destination" aria-label="destination">
+                            formControlName="destination" aria-label="destination"
+                            [compareWith]="compareObjects">
                            
-                                <option selected>Selecciona Ubicación</option>
-                                <option value="1">Madrid</option>
-                                <option value="2">Almeria</option>
-                                <option value="3">Asturias</option>
+                                <option>Selecciona Ubicación</option>
+                                <option value="Madrid">Madrid</option>
+                                <option value="Almeria">Almeria</option>
+                                <option value="Asturias">Asturias</option>
                             
                               </select>
 
@@ -117,7 +119,7 @@
                                     </td>
             
                                     <td>
-                                        <input class="form-check-input" type="checkbox" value="" id="air"
+                                        <input class="form-check-input" type="checkbox" id="air"
                                                 formControlName="air">
                                             <label class="form-check-label" for="air">
                                                 Aire acondicionado
@@ -144,7 +146,7 @@
                     <button class="btn btn-primary" type="submit">Enviar</button>
                     <button class="btn btn-danger" type="submit">Cancelar</button>
                   </div>
-
+                 
 
             </form>
 

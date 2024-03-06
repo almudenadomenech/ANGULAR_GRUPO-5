@@ -10,17 +10,26 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   templateUrl: './user-list.component.html',
   styleUrl: './user-list.component.css'
 })
-export class UserListComponent implements OnInit{
+export class UserListComponent implements OnInit {
+  users: User[] = [];
 
-users: User[] = [];
+  constructor(private http: HttpClient) { }
 
-constructor(private http: HttpClient) { }
+  ngOnInit(): void {
+    this.loadUsers();
+  }
 
-ngOnInit(): void {
-  this.http.get<User[]>('http://localhost:3000/users')
-  .subscribe(users => this.users = users);
+  loadUsers(): void {
+    this.http.get<User[]>('http://localhost:3000/users')
+      .subscribe(users => this.users = users);
+  }
+
+  deleteUser(id: number): void {
+    // Mostrar una confirmación preguntando si se quiere borrar el usuario
+    const remove: boolean = confirm("¿Quiere borrar el usuario de verdad?");
+
+    if (!remove) return; // Si el usuario no confirma, no se borra
+
+    
+  }
 }
-
-}
-
-

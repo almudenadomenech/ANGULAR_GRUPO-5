@@ -38,8 +38,8 @@ export const routes: Routes = [
         path: 'houses/:id/update',
         component: HouseFormComponent
     },
-    {
+    /* {
         path: 'houses/:id/deleted',
         component: HouseFormComponent
-    }
+    }  */
 ];

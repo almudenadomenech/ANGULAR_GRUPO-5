@@ -38,7 +38,7 @@ export class HouseFormComponent implements OnInit{
   });
   
   isUpdate: boolean = false;
- 
+  isDelete: boolean = false;
 
 
    constructor (
@@ -79,6 +79,14 @@ export class HouseFormComponent implements OnInit{
           });
         
       }); 
+
+      this.activatedRoute.params.subscribe(params =>{
+        let id = params['id'];
+        if (id) 
+        this.httpClient.get<House>(`http://localhost:3000/houses/${id}`).subscribe(houses => {
+            this.isDelete = true
+      });
+      })
       
     }
         
@@ -127,7 +135,7 @@ export class HouseFormComponent implements OnInit{
     }
   }
 
-  deleteById(id: string | number){
+ /*  deleteById(id: string | number){
     
       
     const remove: boolean = confirm("¿Quiere eliminar esta casa?");
@@ -135,5 +143,5 @@ export class HouseFormComponent implements OnInit{
     this.httpClient.delete<House>(`http://localhost:3000/houses/${id}`).subscribe(() =>{
       console.log('la casa ha sido eliminada');
   });
-  }
+  } */
 }

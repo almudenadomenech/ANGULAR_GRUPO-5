@@ -49,14 +49,7 @@ export class HouseFormComponent implements OnInit{
 
 
   ngOnInit(): void {
-      //this.httpClient.get<House[]>('http://localhost:3000/houses')
-    //.subscribe(houses => this.houses = houses); 
-
-       //const url = 'http://localhost:3000/houses';
-
-       // ESTA LINEA DA UN ERROR. NO TRAE LA UBICACIÓN NI EL NOMBRE DE LA CASA
-         //this.httpClient.post<House>(url, this.houses).subscribe(data => this.router.navigate(['/houses/:id/update']));
-
+     
         this.activatedRoute.params.subscribe(params => {
           let id = params['id'];
           if (!id) 
@@ -86,6 +79,7 @@ export class HouseFormComponent implements OnInit{
           });
         
       }); 
+      
     }
         
   
@@ -131,5 +125,15 @@ export class HouseFormComponent implements OnInit{
     } else {
       return o1 === o2;
     }
+  }
+
+  deleteById(id: string | number){
+    
+      
+    const remove: boolean = confirm("¿Quiere eliminar esta casa?");
+    if(!remove) return;
+    this.httpClient.delete<House>(`http://localhost:3000/houses/${id}`).subscribe(() =>{
+      console.log('la casa ha sido eliminada');
+  });
   }
 }

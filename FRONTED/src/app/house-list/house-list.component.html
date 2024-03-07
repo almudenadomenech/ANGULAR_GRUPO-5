@@ -30,8 +30,14 @@
                     </p>
                     @if (house) {
                     <button type="button" class="btn btn-secondary me-2" [routerLink]="['/houses', house.id, 'update']">
-                      Editar</button>
-                    }
+                      Editar</button>                    
+                      }
+                    
+
+                     @if (house) {
+                      <button type="button" class="btn btn-danger me-2" [routerLink]="['/houses', house.id, 'deleted']">
+                        Borrar</button>
+                      } 
                     <div class="d-flex justify-content-between align-items-center">
                        
                   </div>

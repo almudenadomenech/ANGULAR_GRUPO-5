@@ -11,7 +11,7 @@ import { RouterLink } from '@angular/router';
   styleUrl: './house-list.component.css'
 })
 export class HouseListComponent implements OnInit{
-
+  
   houses: House [] = [];
 
   constructor(private httpClient: HttpClient) {}

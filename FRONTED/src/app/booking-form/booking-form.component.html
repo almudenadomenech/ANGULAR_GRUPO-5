@@ -1,6 +1,7 @@
 
 <form [formGroup]="bookForm" (ngSubmit)="save()">
 
+    <!--
     <div>
         <label for="id">Nombre de la casa</label>
         <select id="id" formControlName="id">
@@ -60,6 +61,39 @@
     </div>
     
     <button type="submit">Enviar</button>
+
+     -->
+
+     <div class="row g-3; mt-3" >
+
+        
+        <div class="col">
+            <label for="entryDate">Día de entrada</label>
+            <input type="date" id="entryDate" formControlName="entryDate" class="form-control">
+        </div>
+        <div class="col">
+            <label for="entryDate">Día de salida</label>
+            <input type="date" id="departureDate" formControlName="departureDate" class="form-control">
+        </div>
+
+        <div class="col">
+            <label for="people">Número de personas</label>
+            <input type="number" min="1" step="1" class="form-contol" id="people" formControlName="people" placeholder="" aria-label="people">
+        </div>
+
+        
+        <div class="col">
+            <label for="destination">Destino</label>
+            <input type="text" class="form-contol" id="destination" formControlName="destination" placeholder="" aria-label="destination">
+        </div>
+
+
+      </div>
+    
+      
+
+
+      
 
 
 

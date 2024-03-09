@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup, FormsModule, MaxLengthValidator, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Booking } from '../interfaces/booking.model';
+import { NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-booking-form',
   standalone: true,
-  imports: [ReactiveFormsModule, FormsModule],
+  imports: [ReactiveFormsModule, FormsModule, NgbDatepickerModule],
   templateUrl: './booking-form.component.html',
   styleUrl: './booking-form.component.css'
 })
@@ -16,7 +17,7 @@ export class BookingFormComponent {
     entryDate: new FormControl(new Date()),
     //entryDate: new FormControl(new Date().toISOSString().slice(0,16))
     departureDate: new FormControl(new Date()),
-    people: new FormControl(),
+    people: new FormControl(0, [Validators.min(1)]),
     destination: new FormControl(''),
     available: new FormControl(true),
     category: new FormControl(),
@@ -46,6 +47,9 @@ export class BookingFormComponent {
     const topics = this.bookForm.get('topics')?.value;
     console.log(topics);
 
+/*
+
+*/
 
 /*    const booking: Booking = {
       id: this.bookForm.get('id')?.value ?? 0,

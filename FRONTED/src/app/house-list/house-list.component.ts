@@ -28,7 +28,7 @@ export class HouseListComponent implements OnInit{
         
         console.log('La casa ha sido eliminada');
        
-      //  this.houses = this.houses.filter(house => house.id !== id);
+       this.houses = this.houses.filter(house => house.id !== id);
       });
   } 
 

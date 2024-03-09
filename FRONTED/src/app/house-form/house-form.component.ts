@@ -135,13 +135,5 @@ export class HouseFormComponent implements OnInit{
     }
   }
 
- /*  deleteById(id: string | number){
-    
-      
-    const remove: boolean = confirm("¿Quiere eliminar esta casa?");
-    if(!remove) return;
-    this.httpClient.delete<House>(`http://localhost:3000/houses/${id}`).subscribe(() =>{
-      console.log('la casa ha sido eliminada');
-  });
-  } */
+ 
 }

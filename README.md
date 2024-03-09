@@ -102,10 +102,59 @@ Objetivo: tener desarrollado un CRUD completo sobre productos.
 4. En el método save, distinguir si existe id entonces hacer un update PUT, si no existe id entonces hacer un create POST.
 
 
-## ACTUALIZAR DESDE FORMULARIO
+## CREAT BACKEND
 
-1. Enrutado:  
-  * /products/: id/update se puede llegar al formulario
-  * /produ
-2. 
+# DESCARGAR E INSTALAR POSTMAN
+Descargar e instalar POSTMAN
 
+https://www.postman.com/
+
+Postman permite probar el backend.
+
+## COMANDOS 
+
+1. Crear proyecto backend:
+
+nest new nest-BACKEND --skip-git --package-manager npm
+
+2. Creat un controlador:
+nest generate controller Book
+
+3. Levantar el servidor:
+nest start --watch
+
+## CREAR CONTROLADORES
+
+Crear interface book.model.ts
+
+nest generate controller Book
+
+Recuperar datos:
+
+* Métodos @Get()
+* Métodos @Get() con parámetros
+* Métodos @Get() con parámetro y pipe ParseIntPipe
+* Devolver string
+* Devolver un objeto
+* Devolver un array de
+* Crear nuevos datos:
+
+Método @Post()
+@Body() para recibir un objeto en método @Post()
+Actualizar datos existentes:
+
+Borrar datos existentes
+
+## EJEMPLO:
+
+## AUTHOR
+
+nest generate controller Author
+
+Crear author.model.ts dentro de la carpeta author
+
+* @Get() findAll
+* @Get() findById
+* @Post create
+* @Put update
+* @Delete deleteById

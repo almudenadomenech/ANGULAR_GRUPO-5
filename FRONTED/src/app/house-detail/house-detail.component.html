@@ -44,10 +44,54 @@
 <div class="card" style="margin: 40px;">
   <div class="card-body">
     <h5 style="margin-left: 10px;">Espacios para reservar</h5>
+    <div>
+
+      
+            @if (house) {
+              <div class="d-grid gap-2">
+              <button [routerLink]="['/booking', house.id, 'form']" class="btn btn-outline-success" >Reservar</button>
+            </div>
+            }
+    </div>
+
+
 <div class="container">
   <div class="row">
     <div class="col">
-      <p>Añadiendo fechas y n.º de personas podrás ver el precio exacto para cada espacio</p>
+
+
+      <div class="row g-3; mt-3" >
+
+        
+        <div class="col">
+            <label for="entryDate">Día de entrada</label>
+            <input type="date" id="entryDate" formControlName="entryDate" class="form-control">
+        </div>
+        <div class="col">
+            <label for="entryDate">Día de salida</label>
+            <input type="date" id="departureDate" formControlName="departureDate" class="form-control">
+        </div>
+        <div class="col">
+            <label for="people">Número de personas</label>
+            <input type="number" min="1" step="1" class="form-contol" id="people" formControlName="people" placeholder="" aria-label="people" class="form-control">
+        </div>
+        <div class="col">
+          <label for="destination">Destino</label>
+
+        <select class="form-select form-select-lg" aria-label="">
+          <option selected></option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+
+      </div>
+
+
+
+
+      
     </div>
 </div>
   </div>

@@ -34,7 +34,7 @@ export class LoginComponent {
     this. httpClient.post<Login>(url, login).subscribe(res => {console.log(res); // respuesta token JWT y lo guardaríamos en localStorage
     
     // redirigir hacia la home
-    this.router.navigate(['/']);
+    this.router.navigate(['/home']);
     }); 
     
     

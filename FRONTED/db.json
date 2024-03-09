@@ -109,25 +109,7 @@
       "destination": "Asturias"
     },
     {
-      "id": 7,
-      "title": "Casa de Prueba2",
-      "places": "25",
-      "bedrooms": 15,
-      "bathrooms": 10,
-      "price": 300,
-      "meters": 1000,
-      "destination": "",
-      "petFriendly": false,
-      "pool": false,
-      "garden": false,
-      "terrace": false,
-      "wifi": false,
-      "air": false,
-      "description": "",
-      "photoUrls": []
-    },
-    {
-      "id": 8,
+      "id": "8",
       "title": "Casa de Prueba3",
       "places": "25",
       "bedrooms": 15,

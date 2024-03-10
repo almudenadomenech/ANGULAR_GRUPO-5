@@ -8,6 +8,7 @@ import { BookingFormComponent } from './booking-form/booking-form.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { HouseFormComponent } from './house-form/house-form.component';
 
 
 export const routes: Routes = [
@@ -38,6 +39,14 @@ export const routes: Routes = [
         component: BookingFormComponent
     },
     {
+        path: 'houses/create',
+        component: HouseFormComponent
+    },
+    {
+        path: 'houses/:id/update',
+        component: HouseFormComponent
+    },
+    {
         path: 'login',
         component: LoginComponent
     },
@@ -52,5 +61,6 @@ export const routes: Routes = [
     {
         path: '**',
         redirectTo: '/not-found-404'
-    }
+    },
+    
 ];

@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { HouseDetailComponent } from './house-detail/house-detail.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { HouseFormComponent } from './house-form/house-form.component';
 
 
 
@@ -8,7 +11,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, RouterLink]
+    imports: [RouterOutlet, RouterLink, HouseDetailComponent, NavbarComponent, HouseFormComponent]
 })
 export class AppComponent {
   title = 'FRONTED';

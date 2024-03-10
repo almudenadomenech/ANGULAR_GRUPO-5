@@ -19,24 +19,6 @@
       "destination": "Asturias"
     },
     {
-      "id": "2",
-      "title": "Coop",
-      "places": "2",
-      "bedrooms": 5,
-      "bathrooms": 3,
-      "price": 42,
-      "meters": 217,
-      "petFriendly": false,
-      "pool": false,
-      "garden": true,
-      "terrace": true,
-      "wifi": false,
-      "air": true,
-      "description": "Casa muy bonita en el mar ",
-      "photoUrls": "https://cdn.pixabay.com/photo/2022/08/17/09/15/houses-7391985_1280.jpg",
-      "destination": "Asturias"
-    },
-    {
       "id": "3",
       "title": "Virgil",
       "places": "2-7",
@@ -134,6 +116,7 @@
       "bathrooms": 1,
       "price": 50,
       "meters": 150,
+      "destination": "Madrid",
       "petFriendly": true,
       "pool": true,
       "garden": false,
@@ -141,8 +124,8 @@
       "wifi": false,
       "air": false,
       "description": "Casa muy bonita en el mar ",
-      "photoUrls": "https://cdn.pixabay.com/photo/2022/08/17/09/15/houses-7391985_1280.jpg",
-      "destination": "Madrid"
+      "photoUrls": "https://cdn.pixabay.com/photo/2022/08/17/09/15/houses-7391985_1280.jpg"
+      
     }
   ],
   "users": [

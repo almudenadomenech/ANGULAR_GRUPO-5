@@ -107,24 +107,6 @@
       "description": "Casa muy bonita en el mar ",
       "photoUrls": "https://cdn.pixabay.com/photo/2022/08/17/09/15/houses-7391985_1280.jpg",
       "destination": "Asturias"
-    },
-    {
-      "id": "8",
-      "title": "Casa de Prueba3",
-      "places": "25",
-      "bedrooms": 15,
-      "bathrooms": 10,
-      "price": 300,
-      "meters": 1000,
-      "destination": "",
-      "petFriendly": false,
-      "pool": false,
-      "garden": false,
-      "terrace": false,
-      "wifi": false,
-      "air": false,
-      "description": "",
-      "photoUrls": []
     }
   ],
   "users": [

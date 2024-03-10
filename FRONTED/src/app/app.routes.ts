@@ -39,6 +39,14 @@ export const routes: Routes = [
         component: BookingFormComponent
     },
     {
+        path: 'houses/create',
+        component: HouseFormComponent
+    },
+    {
+        path: 'houses/:id/update',
+        component: HouseFormComponent
+    },
+    {
         path: 'login',
         component: LoginComponent
     },
@@ -54,12 +62,5 @@ export const routes: Routes = [
         path: '**',
         redirectTo: '/not-found-404'
     },
-    {
-        path: 'houses/create',
-        component: HouseFormComponent
-    },
-    {
-        path: 'houses/:id/update',
-        component: HouseFormComponent
-    },
+    
 ];

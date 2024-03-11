@@ -107,25 +107,6 @@
       "description": "Casa muy bonita en el mar ",
       "photoUrls": "https://cdn.pixabay.com/photo/2022/08/17/09/15/houses-7391985_1280.jpg",
       "destination": "Madrid"
-    },
-    {
-      "id": "8",
-      "title": "Casa Prueba3",
-      "places": "4",
-      "bedrooms": 2,
-      "bathrooms": 1,
-      "price": 50,
-      "meters": 150,
-      "destination": "Madrid",
-      "petFriendly": true,
-      "pool": true,
-      "garden": false,
-      "terrace": false,
-      "wifi": false,
-      "air": false,
-      "description": "Casa muy bonita en el mar ",
-      "photoUrls": "https://cdn.pixabay.com/photo/2022/08/17/09/15/houses-7391985_1280.jpg"
-      
     }
   ],
   "users": [

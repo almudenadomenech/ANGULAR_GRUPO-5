@@ -107,8 +107,6 @@
       "description": "Casa muy bonita en el mar ",
       "photoUrls": "https://cdn.pixabay.com/photo/2022/08/17/09/15/houses-7391985_1280.jpg",
       "destination": "Madrid"
-<<<<<<< HEAD
-=======
     },
     {
       "id": "8",
@@ -166,7 +164,6 @@
       "description": "Casa muy bonita en el mar ",
       "photoUrls": "https://cdn.pixabay.com/photo/2022/08/17/09/15/houses-7391985_1280.jpg"
       
->>>>>>> 45423b51df841c93004f2bd3d67145a2398ecb9b
     }
   ],
   "users": [

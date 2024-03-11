@@ -14,7 +14,7 @@ import { HouseFormComponent } from './house-form/house-form.component';
 export const routes: Routes = [
     
     {
-        path: '',
+        path: 'home',
         component: HomeComponent
     },
     {

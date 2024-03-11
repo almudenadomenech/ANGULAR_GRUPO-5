@@ -22,12 +22,12 @@
 
 .navbar-nav a {
     text-decoration: none; /* Quita el subrayado de los enlaces */
-    color: #333; /* Cambia el color del texto */
+    color: #5a6b56; /* Cambia el color del texto */
     font-weight: bold; /* Añade negrita al texto */
 }
 
 .navbar-nav a:hover {
-    color: #ff8800; /* Cambia el color del texto al pasar el ratón por encima */
+    color: #7d9e47; /* Cambia el color del texto al pasar el ratón por encima */
 }
 
 .dropdown-menu {
@@ -43,4 +43,15 @@
 .dropdown-item:hover {
     background-color: #ff8800; /* Cambia el color de fondo al pasar el ratón por encima */
     color: #fff; /* Cambia el color del texto al pasar el ratón por encima */
+}
+.btn {
+    background-color: #7d9e47;
+    border: none;
+}
+.btn:hover{
+    background-color: #5a6b56;
+}
+.name-logo{
+    color:#5a6b56;
+    
 }

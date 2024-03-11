@@ -1,6 +1,6 @@
 /* Estilos para el pie de página */
 footer {
-    background-color: #e4ddd6; /* Color de fondo del pie de página */
+    /* background-color: #ffffff; Color de fondo del pie de página */
     padding: 20px; /* Espaciado interno */
     margin: 0; /* Eliminar cualquier margen */
 }
@@ -50,4 +50,11 @@ p {
 /* Estilos para los íconos de redes sociales */
 .bi {
     margin-right: 10px; /* Margen derecho */
+}
+.btn{
+    background-color: #7d9e47;
+    border: none;
+}
+.btn:hover{
+    background-color: #5a6b56;
 }

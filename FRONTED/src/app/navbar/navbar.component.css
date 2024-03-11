@@ -1,0 +1,57 @@
+.navbar {
+    background-color: #e4ddd6; /* Cambia el color de fondo */
+    padding: 10px 20px; /* Ajusta el padding para el contenido interno */
+    border-radius: 5px; /* Agrega bordes redondeados */
+}
+.navbar-brand img {
+    width: 60px; /* Ajusta el ancho de la imagen del logo */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 20px; /* Añade un espacio a la derecha de la imagen del logo */
+}
+
+.navbar-nav {
+    list-style-type: none; /* Quita los puntos de lista */
+    padding: 0; /* Elimina el padding para la lista */
+    text-align: center; /* Centra los elementos de la lista */
+}
+
+.navbar-nav li {
+    display: inline; /* Coloca los elementos de la lista en línea */
+    margin: 0 10px; /* Añade un margen entre los elementos */
+}
+
+.navbar-nav a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #5a6b56; /* Cambia el color del texto */
+    font-weight: bold; /* Añade negrita al texto */
+}
+
+.navbar-nav a:hover {
+    color: #7d9e47; /* Cambia el color del texto al pasar el ratón por encima */
+}
+
+.dropdown-menu {
+    background-color: #f8e8db; /* Cambia el color de fondo del menú desplegable */
+    border: none; /* Elimina el borde */
+    border-radius: 5px; /* Agrega bordes redondeados */
+}
+
+.dropdown-item {
+    color: #333; /* Cambia el color del texto de los elementos del menú desplegable */
+}
+
+.dropdown-item:hover {
+    background-color: #ff8800; /* Cambia el color de fondo al pasar el ratón por encima */
+    color: #fff; /* Cambia el color del texto al pasar el ratón por encima */
+}
+.btn {
+    background-color: #7d9e47;
+    border: none;
+}
+.btn:hover{
+    background-color: #5a6b56;
+}
+.name-logo{
+    color:#5a6b56;
+    
+}

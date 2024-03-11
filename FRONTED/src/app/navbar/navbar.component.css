@@ -1,57 +1,67 @@
+/* Estilos para la barra de navegación */
 .navbar {
-    background-color: #e4ddd6; /* Cambia el color de fondo */
-    padding: 10px 20px; /* Ajusta el padding para el contenido interno */
-    border-radius: 5px; /* Agrega bordes redondeados */
-}
-.navbar-brand img {
-    width: 60px; /* Ajusta el ancho de la imagen del logo */
-    height: auto; /* Mantiene la proporción de la imagen */
-    margin-right: 20px; /* Añade un espacio a la derecha de la imagen del logo */
+    background-color: #e4ddd6;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
+/* Estilos para el logo */
+.navbar-brand img {
+    width: 60px;
+    height: auto;
+    margin-right: 20px;
+}
+
+/* Estilos para la lista de navegación */
 .navbar-nav {
-    list-style-type: none; /* Quita los puntos de lista */
-    padding: 0; /* Elimina el padding para la lista */
-    text-align: center; /* Centra los elementos de la lista */
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
 }
 
 .navbar-nav li {
-    display: inline; /* Coloca los elementos de la lista en línea */
-    margin: 0 10px; /* Añade un margen entre los elementos */
+    display: inline;
+    margin: 0 10px;
 }
 
+/* Estilos para los enlaces de navegación */
 .navbar-nav a {
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-    color: #5a6b56; /* Cambia el color del texto */
-    font-weight: bold; /* Añade negrita al texto */
+    text-decoration: none;
+    color: #5a6b56;
+    font-weight: bold;
 }
 
 .navbar-nav a:hover {
-    color: #7d9e47; /* Cambia el color del texto al pasar el ratón por encima */
+    color: #7d9e47;
 }
 
+/* Estilos para el menú desplegable */
 .dropdown-menu {
-    background-color: #f8e8db; /* Cambia el color de fondo del menú desplegable */
-    border: none; /* Elimina el borde */
-    border-radius: 5px; /* Agrega bordes redondeados */
+    background-color: #f8e8db;
+    border: none;
+    border-radius: 5px;
 }
 
 .dropdown-item {
-    color: #333; /* Cambia el color del texto de los elementos del menú desplegable */
+    color: #333;
 }
 
 .dropdown-item:hover {
-    background-color: #ff8800; /* Cambia el color de fondo al pasar el ratón por encima */
-    color: #fff; /* Cambia el color del texto al pasar el ratón por encima */
+    background-color: #ff8800;
+    color: #fff;
 }
+
+/* Estilos para los botones */
 .btn {
     background-color: #7d9e47;
     border: none;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #5a6b56;
 }
-.name-logo{
-    color:#5a6b56;
-    
+
+/* Estilos para el nombre del logo */
+.name-logo {
+    color: #5a6b56;
 }

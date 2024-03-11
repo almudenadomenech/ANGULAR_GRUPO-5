@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HouseFormComponent } from './house-form/house-form.component';
+import { UserListComponent } from './user-list/user-list.component';
 
 
 export const routes: Routes = [
@@ -60,6 +61,10 @@ export const routes: Routes = [
     {
         path: 'not-found-404',
         component: NotFoundComponent
+    },
+    {
+        path: 'user',
+        component: UserListComponent
     },
     {
         path: '**',

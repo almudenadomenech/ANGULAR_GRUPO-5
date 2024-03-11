@@ -6,6 +6,7 @@ import { HouseFormComponent } from './house-form/house-form.component';
 import { FooterComponent } from './footer/footer.component';
 import { BookingFormComponent } from './booking-form/booking-form.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { UserListComponent } from './user-list/user-list.component';
 
 
 
@@ -16,7 +17,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     styleUrl: './app.component.css',
     imports: [RouterOutlet, RouterLink, HouseDetailComponent, 
       NavbarComponent, HouseFormComponent, FooterComponent, 
-      BookingFormComponent, NotFoundComponent]
+      BookingFormComponent, NotFoundComponent, UserListComponent]
 })
 export class AppComponent {
   title = 'FRONTED';

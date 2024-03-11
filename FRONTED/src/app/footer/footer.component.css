@@ -1,0 +1,60 @@
+/* Estilos para el pie de página */
+footer {
+    /* background-color: #ffffff; Color de fondo del pie de página */
+    padding: 20px; /* Espaciado interno */
+    margin: 0; /* Eliminar cualquier margen */
+}
+
+/* Estilos para la fila */
+.row {
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilos para las columnas */
+.col-md-2 {
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilos para las secciones */
+h5 {
+    color: #333; /* Color del texto del encabezado */
+    font-weight: bold; /* Peso de la fuente */
+}
+
+/* Estilos para los enlaces */
+.nav-link {
+    text-decoration: none; /* Quita el subrayado */
+    color: #333; /* Color del texto */
+    font-weight: bold; /* Peso de la fuente */
+}
+
+/* Estilos para el formulario */
+form {
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilos para el botón de suscripción */
+.btn-success {
+    background-color: #28a745; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+
+/* Estilos para el texto de copyright */
+p {
+    color: #333; /* Color del texto */
+}
+
+/* Estilos para los íconos de redes sociales */
+.bi {
+    margin-right: 10px; /* Margen derecho */
+}
+.btn{
+    background-color: #7d9e47;
+    border: none;
+}
+.btn:hover{
+    background-color: #5a6b56;
+}

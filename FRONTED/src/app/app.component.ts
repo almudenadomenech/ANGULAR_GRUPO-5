@@ -11,7 +11,8 @@ import { UserListComponent } from "./user-list/user-list.component";
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, HouseDetailComponent, RouterLink, NavbarComponent, FooterComponent, UserListComponent]
+    imports: [RouterOutlet, HouseDetailComponent, RouterLink,
+       NavbarComponent, FooterComponent, UserListComponent]
 })
 export class AppComponent {
   title = 'FRONTED';

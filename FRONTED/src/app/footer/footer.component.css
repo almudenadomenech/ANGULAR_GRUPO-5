@@ -1,60 +1,84 @@
-/* Estilos para el pie de página */
-footer {
-    /* background-color: #ffffff; Color de fondo del pie de página */
-    padding: 20px; /* Espaciado interno */
-    margin: 0; /* Eliminar cualquier margen */
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #e4ddd6;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
-/* Estilos para la fila */
-.row {
-    margin-bottom: 20px; /* Margen inferior */
+/* Estilos para el logo en la barra de navegación */
+.navbar-brand img {
+    max-width: 100px; /* Cambia el ancho máximo del logo */
+    height: auto;
+    margin-right: 20px;
 }
 
-/* Estilos para las columnas */
-.col-md-2 {
-    margin-bottom: 20px; /* Margen inferior */
+/* Estilos para los elementos de la barra de navegación */
+.navbar-nav {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
 }
 
-/* Estilos para las secciones */
-h5 {
-    color: #333; /* Color del texto del encabezado */
-    font-weight: bold; /* Peso de la fuente */
+.navbar-nav li {
+    display: inline;
+    margin: 0 10px;
 }
 
-/* Estilos para los enlaces */
-.nav-link {
-    text-decoration: none; /* Quita el subrayado */
-    color: #333; /* Color del texto */
-    font-weight: bold; /* Peso de la fuente */
+/* Estilos para los enlaces en la barra de navegación */
+.navbar-nav a {
+    text-decoration: none;
+    color: #5a6b56;
+    font-weight: normal; /* Cambia el grosor del texto de 'bold' a 'normal' */
 }
 
-/* Estilos para el formulario */
-form {
-    margin-bottom: 20px; /* Margen inferior */
+.navbar-nav a:hover {
+    color: #7d9e47;
 }
 
-/* Estilos para el botón de suscripción */
-.btn-success {
-    background-color: #28a745; /* Color de fondo */
-    color: #fff; /* Color del texto */
-    border: none; /* Sin borde */
-    padding: 10px 20px; /* Espaciado interno */
-    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+/* Estilos para el menú desplegable */
+.dropdown-menu {
+    background-color: #f8e8db;
+    border: none;
+    border-radius: 5px;
 }
 
-/* Estilos para el texto de copyright */
-p {
-    color: #333; /* Color del texto */
+.dropdown-item {
+    color: #333;
 }
 
-/* Estilos para los íconos de redes sociales */
-.bi {
-    margin-right: 10px; /* Margen derecho */
+.dropdown-item:hover {
+    background-color: #ff8800;
+    color: #fff;
 }
-.btn{
+
+/* Estilos para los botones */
+.btn {
     background-color: #7d9e47;
     border: none;
+    color: white; /* Cambia el color del texto del botón a blanco */
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #5a6b56;
+}
+
+/* Estilos para el nombre del logo */
+.name-logo {
+    color: #5a6b56;
+}
+/* Estilos para el logo */
+img {
+    max-width: 40px; /* Cambia el ancho máximo del logo */
+    height: 24; /* Mantiene la proporción del logo */
+}
+/* Estilos para los íconos de redes sociales */
+.bi {
+    font-size: 1.5rem; /* Tamaño de los íconos más pequeño */
+    margin-right: 5px; /* Reducir el margen derecho */
+}
+
+/* Estilos para el texto del footer */
+p {
+    color: #666; /* Cambiar el color del texto a un tono más suave */
+    font-weight:normal; /* Cambiar el grosor de la fuente a normal */
 }

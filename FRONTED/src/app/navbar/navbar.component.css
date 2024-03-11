@@ -1,18 +1,15 @@
-/* Estilos para la barra de navegación */
 .navbar {
     background-color: #e4ddd6;
     padding: 10px 20px;
     border-radius: 5px;
 }
 
-/* Estilos para el logo */
 .navbar-brand img {
     width: 60px;
     height: auto;
     margin-right: 20px;
 }
 
-/* Estilos para la lista de navegación */
 .navbar-nav {
     list-style-type: none;
     padding: 0;
@@ -24,18 +21,16 @@
     margin: 0 10px;
 }
 
-/* Estilos para los enlaces de navegación */
 .navbar-nav a {
     text-decoration: none;
     color: #5a6b56;
-    font-weight: bold;
+    font-weight: normal; /* Cambia el grosor de la fuente a normal */
 }
 
 .navbar-nav a:hover {
     color: #7d9e47;
 }
 
-/* Estilos para el menú desplegable */
 .dropdown-menu {
     background-color: #f8e8db;
     border: none;
@@ -51,7 +46,6 @@
     color: #fff;
 }
 
-/* Estilos para los botones */
 .btn {
     background-color: #7d9e47;
     border: none;
@@ -61,7 +55,6 @@
     background-color: #5a6b56;
 }
 
-/* Estilos para el nombre del logo */
 .name-logo {
     color: #5a6b56;
 }

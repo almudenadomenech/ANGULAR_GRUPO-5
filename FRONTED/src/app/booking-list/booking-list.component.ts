@@ -14,10 +14,20 @@ export class BookingListComponent implements OnInit{
 
   bookings: Booking [] = [];
 
-  constructor(private httCliente: HttpClient){}
+  constructor(private httpClient: HttpClient){}
   ngOnInit(): void {
-    this.httCliente.get<Booking[]>('http://localhost:3000/booking')
+    this.httpClient.get<Booking[]>('http://localhost:3000/booking')
     .subscribe(bookings => this.bookings = bookings);
   }
+
+  deleteById(id: string | number): void {
+    const remove: boolean = confirm("¿Quiere eliminar esta reserva de su lista?");
+    if (!remove) return;
+    this.httpClient.delete<Booking>(`http://localhost:3000/booking/${id}`)
+      .subscribe(() => {
+       
+       this.bookings = this.bookings.filter(booking => booking.id !== id);
+      });
+  } 
 
 }

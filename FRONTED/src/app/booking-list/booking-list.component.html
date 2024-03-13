@@ -4,13 +4,13 @@
       <h1 class="mt-5">Listado de Reservas </h1>
       <table class="table table-striped mt-5">
         <thead>
-           <tr>
-                      
+           
+            <tr>                      
             <th scope="col">Fecha de entrada</th>
             <th scope="col">Fecha de salida</th>
             <th scope="col">Ubicación</th>
-            </tr>
-
+            </tr> 
+            <br>
               </thead>
                 <tbody>
                     @for (booking of bookings; track booking.id) { 
@@ -23,16 +23,19 @@
                       
                       <td>
                         <!-- La misma funcion que en el comentario de arriba pero con el botón -->
-                        <button type="button" class="btn btn-success me-2" 
-                        [routerLink]="['/bookings', booking.id, 'detail']">
+                        <button type="button" class="btn btn-outline-success me-2" 
+                        [routerLink]="['/booking', booking.id, 'detail']">
                         <i class="bi bi-eye"></i>
                         Ver detalle</button>
                         
                       </td>
+                      <td>
+                        <button class="btn btn-outline-danger w-100 py-2 " (click)="deleteById(booking.id)"> Borrar</button>
+                      </td>
+                      
                       
                     </tr>
                     }
-
                   
                  
                 </tbody>

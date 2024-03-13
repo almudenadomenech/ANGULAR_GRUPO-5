@@ -59,13 +59,14 @@ export const routes: Routes = [
         component: RegisterComponent
     },
     {
-        path: 'not-found-404',
-        component: NotFoundComponent
-    },
-    {
         path: 'user',
         component: UserListComponent
     },
+    {
+        path: 'not-found-404',
+        component: NotFoundComponent
+    },
+   
     {
         path: '**',
         redirectTo: '/not-found-404'

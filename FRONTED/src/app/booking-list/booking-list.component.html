@@ -5,6 +5,7 @@
         <br>
       <table class="table">
      
+      <table>
         <thead>
            
             <tr>                      
@@ -15,10 +16,9 @@
             <br>
               </thead>
                 <tbody>
-                    @for (booking of bookings; track booking.id) { 
+                    @for (booking of bookings; track booking.id) {  
                     <tr>
-                      
-                   
+
                       <td>{{booking.entryDate}}</td>
                       <td>{{booking.departureDate}}</td>
                       <td>{{booking.destination}}</td>
@@ -36,7 +36,7 @@
                       
                       
                     </tr>
-                    }
+                     } 
                   
                  
                 </tbody>

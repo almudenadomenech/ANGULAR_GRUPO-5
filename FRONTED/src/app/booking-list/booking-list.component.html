@@ -1,33 +1,45 @@
 <div class="container">
-    <div class="row">
-        <div class="col-12">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="mt-5">Listado de Reservas </h1>
+      <table class="table table-striped mt-5">
+        <thead>
+           <tr>
+                      
+            <th scope="col">Fecha de entrada</th>
+            <th scope="col">Fecha de salida</th>
+            <th scope="col">Ubicación</th>
+            </tr>
 
-          <h1 class="mt-5">Listado de reservas</h1>
-            <table class="table-info">
-                <thead>
-                  <tr>
-                    
-                    <th scope="col">Fecha de inicio</th>
-                    <th scope="col">Fecha de fin</th>
-                    <th scope="col">Destino</th>
-                    
-                  </tr>
-                </thead>
+              </thead>
                 <tbody>
-                  @for(booking of bookings; track booking.id)
-                  <tr>
-                    
-                    <td>{{entryDate}}</td>
-                    <td>{{departureDate}}</td>
-                    <td>{{destination}}</td>
-                  </tr>
-                
-                  <button class="btn btn-success me-2"
-                  [routerLink]="['/bookings', booking.id, 'detail']">                  
-                  Ver detalle</button>
+                    @for (booking of bookings; track booking.id) { 
+                    <tr>
+                      
+                   
+                      <td>{{booking.entryDate}}</td>
+                      <td>{{booking.departureDate}}</td>
+                      <td>{{booking.destination}}</td>
+                      
+                      <td>
+                        <!-- La misma funcion que en el comentario de arriba pero con el botón -->
+                        <button type="button" class="btn btn-success me-2" 
+                        [routerLink]="['/bookings', booking.id, 'detail']">
+                        <i class="bi bi-eye"></i>
+                        Ver detalle</button>
+                        
+                      </td>
+                      
+                    </tr>
+                    }
+
+                  
+                 
                 </tbody>
               </table>
 
         </div>
+
     </div>
+
 </div>

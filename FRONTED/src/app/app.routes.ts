@@ -35,7 +35,7 @@ export const routes: Routes = [
         component: BookingListComponent
     },
     {
-        path: 'bokking/:id/detail',
+        path: 'booking/:id/detail',
         component: BookingDetailComponent
     }, 
     {

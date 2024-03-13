@@ -1,1 +1,33 @@
-<p>booking-list works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+
+          <h1 class="mt-5">Listado de reservas</h1>
+            <table class="table-info">
+                <thead>
+                  <tr>
+                    
+                    <th scope="col">Fecha de inicio</th>
+                    <th scope="col">Fecha de fin</th>
+                    <th scope="col">Destino</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  @for(booking of bookings; track booking.id)
+                  <tr>
+                    
+                    <td>{{entryDate}}</td>
+                    <td>{{departureDate}}</td>
+                    <td>{{destination}}</td>
+                  </tr>
+                
+                  <button class="btn btn-success me-2"
+                  [routerLink]="['/bookings', booking.id, 'detail']">                  
+                  Ver detalle</button>
+                </tbody>
+              </table>
+
+        </div>
+    </div>
+</div>

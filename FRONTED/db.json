@@ -213,7 +213,7 @@
       "entryDate": "23/02/2023",
       "departureDate": "25/06/2023",
       "people": 2,
-      "destination": null,
+      "destination": "Asturias",
       "users": {
         "id": 1,
         "firstName": "Farra",
@@ -261,7 +261,7 @@
       "entryDate": "26/06/2023",
       "departureDate": "29/05/2023",
       "people": 9,
-      "destination": null,
+      "destination": "Madrid",
       "users": {
         "id": 2,
         "firstName": "Pierson",
@@ -309,7 +309,7 @@
       "entryDate": "12/08/2023",
       "departureDate": "18/02/2023",
       "people": 1,
-      "destination": "Provence-Alpes-Côte d'Azur",
+      "destination": "Asturias",
       "users": {
         "id": 3,
         "firstName": "Dolf",
@@ -357,7 +357,7 @@
       "entryDate": "13/05/2023",
       "departureDate": "15/01/2024",
       "people": 4,
-      "destination": "Québec",
+      "destination": "Madrid",
       "users": {
         "id": 4,
         "firstName": "Letti",
@@ -405,7 +405,7 @@
       "entryDate": "02/06/2023",
       "departureDate": "15/08/2023",
       "people": 5,
-      "destination": null,
+      "destination": "Asturias",
       "users": {
         "id": 5,
         "firstName": "Ferdinande",

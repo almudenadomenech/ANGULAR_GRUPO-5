@@ -10,6 +10,7 @@ import { RegisterComponent } from './register/register.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HouseFormComponent } from './house-form/house-form.component';
 import { UserListComponent } from './user-list/user-list.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 
 export const routes: Routes = [
@@ -65,6 +66,10 @@ export const routes: Routes = [
     {
         path: 'user',
         component: UserListComponent
+    },
+    {
+        path: 'user/profile',
+        component: UserProfileComponent
     },
     {
         path: '**',

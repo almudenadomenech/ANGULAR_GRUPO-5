@@ -1,1 +1,50 @@
-<p>booking-detail works!</p>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-4 text-center">
+           
+        </div>
+        <div class="col-8">
+
+            @if(booking){
+                
+                <div class="container px-4 py-5" id="icon-grid">
+                <h2 class="pb-2 border-bottom">Reserva con id {{booking.id}}</h2>
+                
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+                <div class="col d-flex align-items-start">
+                  <i class="bi bi-geo-alt text-primary flex-shrink-0 me-3"></i>
+                <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Personas</h3>
+                <p>{{booking.people}}</p>
+                </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <i class="bi bi-phone text-primary flex-shrink-0 me-3"></i>
+                <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Teléfono</h3>
+                <p>{{restaurant.phone}}</p>
+                </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"></use></svg>
+                <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Puntuación</h3>
+                <p>{{restaurant.rating}}</p>
+                </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"></use></svg>
+                <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Nombre empresa</h3>
+                <p>{{restaurant.name}}</p>
+                </div>
+                </div>
+                </div>
+            </div>
+        }@else {
+            <p>Reserva no encontrado.</p>
+        }
+        </div>
+        
+    </div>
+</div>

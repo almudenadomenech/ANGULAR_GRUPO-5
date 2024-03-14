@@ -10,5 +10,14 @@
   /* img{
     border: 2px solid #68e69c;
     border-radius: 15px;
-  } */
-  
+  }
+  .btn {
+    background-color: #7d9e47;
+    border: none;
+    color:#fff;
+}
+
+.btn:hover {
+    background-color: #5a6b56;
+}
+ */

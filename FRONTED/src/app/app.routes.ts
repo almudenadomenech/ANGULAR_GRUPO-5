@@ -9,15 +9,20 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HouseFormComponent } from './house-form/house-form.component';
+import { UserListComponent } from './user-list/user-list.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 
 export const routes: Routes = [
-    
     {
         path: '',
         component: HomeComponent
     },
-  
+
+    {
+        path: 'home',
+        component: HomeComponent
+    },
     {
         path: 'houses',
         component: HouseListComponent
@@ -31,7 +36,7 @@ export const routes: Routes = [
         component: BookingListComponent
     },
     {
-        path: 'bokking/:id/detail',
+        path: 'boking/:id/detail',
         component: BookingDetailComponent
     }, 
     {
@@ -55,12 +60,21 @@ export const routes: Routes = [
         component: RegisterComponent
     },
     {
+        path: 'user',
+        component: UserListComponent
+    },
+    {
+        path: 'user/profile',
+        component: UserProfileComponent
+    },
+    {
         path: 'not-found-404',
         component: NotFoundComponent
     },
     {
         path: '**',
         redirectTo: '/not-found-404'
-    },
+    }
+    
     
 ];

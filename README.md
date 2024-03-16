@@ -164,7 +164,7 @@ Crear author.model.ts dentro de la carpeta author
 * Crear carpeta fullstack-001
 
 * Crear backend:
-1. nest new BACKEND --skip-git --package-manager npm
+1. nest new backend --skip-git --package-manager npm
 2. cd backend
 3. npm install --save @nestjs/typeorm typeorm mysql2 @nestjs/swagger
 
